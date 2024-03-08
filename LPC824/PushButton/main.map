@@ -1,0 +1,1028 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+                              serial.o (__aeabi_idiv)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_dvmd_tls.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o) (__aeabi_idiv0)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+                              main.o (fflush)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o) (__sinit)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fwalk.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o) (_fwalk)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-impure.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o) (_global_impure_ptr)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o) (__retarget_lock_init_recursive)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memset.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o) (memset)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-freer.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o) (_free_r)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-mallocr.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o) (_malloc_r)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-printf.o)
+                              main.o (printf)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o)
+                              main.o (puts)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-reent.o)
+                              newlib_stubs.o (errno)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-sbrkr.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-mallocr.o) (_sbrk_r)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o) (__sread)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wbuf.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o) (__swbuf_r)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-writer.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o) (_write_r)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wsetup.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o) (__swsetup_r)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-closer.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o) (_close_r)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lseekr.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o) (_lseek_r)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-makebuf.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wsetup.o) (__smakebuf_r)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-mlock.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-freer.o) (__malloc_lock)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-printf.o) (_vfprintf_r)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o) (_printf_i)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-readr.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o) (_read_r)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fstatr.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-makebuf.o) (_fstat_r)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o) (__sfvwrite_r)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-isattyr.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-makebuf.o) (_isatty_r)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memchr-stub.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o) (memchr)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memcpy-stub.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o) (memcpy)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memmove.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o) (memmove)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-reallocr.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o) (_realloc_r)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-msizer.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-reallocr.o) (_malloc_usable_size_r)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_shi.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf_i.o) (__gnu_thumb1_case_shi)
+C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf_i.o) (__aeabi_uidivmod)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x00000000         0x00008000
+ram              0x10000000         0x00002000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD init.o
+LOAD main.o
+LOAD serial.o
+LOAD newlib_stubs.o
+LOAD C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a
+                0x00000400                stack_size = 0x400
+                0x00000400                heap_size = 0x400
+                [!provide]                PROVIDE (_stack_start = (ORIGIN (ram) + LENGTH (ram)))
+                [!provide]                PROVIDE (_stack_end = (_stack_start - stack_size))
+                [!provide]                PROVIDE (_heap_start = (_stack_end - heap_size))
+START GROUP
+LOAD C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a
+LOAD C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a
+LOAD C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libm.a
+END GROUP
+                0x00000000                . = ORIGIN (flash)
+
+.vectors        0x00000000       0xc0
+ *o(.vectors_)
+ .vectors       0x00000000       0xc0 init.o
+                0x00000000                Vectors
+
+.text           0x000000c0     0x22d7
+                0x000000c0                . = ALIGN (0x4)
+                0x000000c0                _start_text = .
+ *(.text)
+ .text          0x000000c0       0xe4 init.o
+                0x000000c0                clock_init
+                0x00000114                init
+                0x0000018c                Default_Handler
+                0x00000192                Test_Handler
+ .text          0x000001a4       0xd4 main.o
+                0x000001a4                wait_1ms
+                0x000001e4                waitms
+                0x00000206                main
+ .text          0x00000278      0x398 serial.o
+                0x00000278                initUART
+                0x00000368                UART0_isr
+                0x000003a0                putBuf
+                0x000003e8                getBuf
+                0x00000438                rx_count
+                0x0000044c                eputc
+                0x00000490                eputs
+                0x000004bc                egetc
+                0x000004d4                egets
+                0x0000054c                printString
+                0x00000570                PrintNumber
+ .text          0x00000610      0x2c4 newlib_stubs.o
+                0x00000610                _exit
+                0x0000061a                _close
+                0x0000062e                _execve
+                0x00000650                _fork
+                0x00000668                _fstat
+                0x00000684                _getpid
+                0x00000690                _isatty
+                0x000006b8                _kill
+                0x000006d8                _link
+                0x000006f8                _lseek
+                0x0000070e                _sbrk
+                0x00000784                _read
+                0x000007e8                _stat
+                0x00000804                _times
+                0x00000818                _unlink
+                0x00000838                _wait
+                0x00000858                _write
+ .text          0x000008d4      0x1d4 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+                0x000008d4                __divsi3
+                0x000008d4                __aeabi_idiv
+                0x00000aa0                __aeabi_idivmod
+ .text          0x00000aa8        0x4 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_dvmd_tls.o)
+                0x00000aa8                __aeabi_idiv0
+                0x00000aa8                __aeabi_ldiv0
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fwalk.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-impure.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memset.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-freer.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-mallocr.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-printf.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-reent.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-sbrkr.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wbuf.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-writer.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wsetup.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-closer.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lseekr.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-makebuf.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-mlock.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-readr.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fstatr.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-isattyr.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memchr-stub.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memcpy-stub.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memmove.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-reallocr.o)
+ .text          0x00000aac        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-msizer.o)
+ .text          0x00000aac       0x14 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_shi.o)
+                0x00000aac                __gnu_thumb1_case_shi
+ .text          0x00000ac0      0x114 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+                0x00000ac0                __aeabi_uidiv
+                0x00000ac0                __udivsi3
+                0x00000bcc                __aeabi_uidivmod
+ *(.text*)
+ .text.__sflush_r
+                0x00000bd4      0x118 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+                0x00000bd4                __sflush_r
+ .text._fflush_r
+                0x00000cec       0x80 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+                0x00000cec                _fflush_r
+ .text.fflush   0x00000d6c       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+                0x00000d6c                fflush
+ .text.std      0x00000d98       0x48 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+ .text._cleanup_r
+                0x00000de0       0x10 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                0x00000de0                _cleanup_r
+ .text.__fp_lock
+                0x00000df0       0x18 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+ .text.__fp_unlock
+                0x00000e08       0x18 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+ .text.__sfmoreglue
+                0x00000e20       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                0x00000e20                __sfmoreglue
+ .text._cleanup
+                0x00000e4c       0x10 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                0x00000e4c                _cleanup
+ .text.__sfp_lock_acquire
+                0x00000e5c       0x10 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                0x00000e5c                __sfp_lock_acquire
+ .text.__sfp_lock_release
+                0x00000e6c       0x10 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                0x00000e6c                __sfp_lock_release
+ .text.__sinit_lock_acquire
+                0x00000e7c       0x10 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                0x00000e7c                __sinit_lock_acquire
+ .text.__sinit_lock_release
+                0x00000e8c       0x10 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                0x00000e8c                __sinit_lock_release
+ .text.__sinit  0x00000e9c       0x70 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                0x00000e9c                __sinit
+ .text.__sfp    0x00000f0c       0x90 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                0x00000f0c                __sfp
+ .text.__fp_lock_all
+                0x00000f9c       0x1c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                0x00000f9c                __fp_lock_all
+ .text.__fp_unlock_all
+                0x00000fb8       0x1c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                0x00000fb8                __fp_unlock_all
+ .text._fwalk   0x00000fd4       0x36 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fwalk.o)
+                0x00000fd4                _fwalk
+ .text._fwalk_reent
+                0x0000100a       0x40 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fwalk.o)
+                0x0000100a                _fwalk_reent
+ .text.__retarget_lock_init
+                0x0000104a        0x2 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                0x0000104a                __retarget_lock_init
+ .text.__retarget_lock_init_recursive
+                0x0000104c        0x2 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                0x0000104c                __retarget_lock_init_recursive
+ .text.__retarget_lock_close
+                0x0000104e        0x2 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                0x0000104e                __retarget_lock_close
+ .text.__retarget_lock_close_recursive
+                0x00001050        0x2 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                0x00001050                __retarget_lock_close_recursive
+ .text.__retarget_lock_acquire
+                0x00001052        0x2 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                0x00001052                __retarget_lock_acquire
+ .text.__retarget_lock_acquire_recursive
+                0x00001054        0x2 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                0x00001054                __retarget_lock_acquire_recursive
+ .text.__retarget_lock_try_acquire
+                0x00001056        0x4 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                0x00001056                __retarget_lock_try_acquire
+ .text.__retarget_lock_try_acquire_recursive
+                0x0000105a        0x4 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                0x0000105a                __retarget_lock_try_acquire_recursive
+ .text.__retarget_lock_release
+                0x0000105e        0x2 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                0x0000105e                __retarget_lock_release
+ .text.__retarget_lock_release_recursive
+                0x00001060        0x2 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                0x00001060                __retarget_lock_release_recursive
+ .text.memset   0x00001062       0x10 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memset.o)
+                0x00001062                memset
+ *fill*         0x00001072        0x2 
+ .text._free_r  0x00001074       0x94 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-freer.o)
+                0x00001074                _free_r
+ .text.sbrk_aligned
+                0x00001108       0x44 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-mallocr.o)
+ .text._malloc_r
+                0x0000114c       0xec C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x0000114c                _malloc_r
+ .text._printf_r
+                0x00001238       0x28 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-printf.o)
+                0x00001238                _iprintf_r
+                0x00001238                _printf_r
+ .text.printf   0x00001260       0x34 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-printf.o)
+                0x00001260                iprintf
+                0x00001260                printf
+ .text._puts_r  0x00001294       0xe4 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o)
+                0x00001294                _puts_r
+ .text.puts     0x00001378       0x14 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o)
+                0x00001378                puts
+ .text.cleanup_glue
+                0x0000138c       0x1a C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-reent.o)
+                0x0000138c                cleanup_glue
+ *fill*         0x000013a6        0x2 
+ .text._reclaim_reent
+                0x000013a8       0xcc C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-reent.o)
+                0x000013a8                _reclaim_reent
+ .text._sbrk_r  0x00001474       0x24 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-sbrkr.o)
+                0x00001474                _sbrk_r
+ .text.__sread  0x00001498       0x28 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+                0x00001498                __sread
+ .text.__seofread
+                0x000014c0        0x4 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+                0x000014c0                __seofread
+ .text.__swrite
+                0x000014c4       0x38 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+                0x000014c4                __swrite
+ .text.__sseek  0x000014fc       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+                0x000014fc                __sseek
+ .text.__sclose
+                0x00001528        0xc C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+                0x00001528                __sclose
+ .text.__swbuf_r
+                0x00001534       0xac C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wbuf.o)
+                0x00001534                __swbuf_r
+ .text.__swbuf  0x000015e0       0x14 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wbuf.o)
+                0x000015e0                __swbuf
+ .text._write_r
+                0x000015f4       0x28 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-writer.o)
+                0x000015f4                _write_r
+ .text.__swsetup_r
+                0x0000161c       0xf0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wsetup.o)
+                0x0000161c                __swsetup_r
+ .text._close_r
+                0x0000170c       0x24 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-closer.o)
+                0x0000170c                _close_r
+ .text._lseek_r
+                0x00001730       0x28 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lseekr.o)
+                0x00001730                _lseek_r
+ .text.__swhatbuf_r
+                0x00001758       0x50 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-makebuf.o)
+                0x00001758                __swhatbuf_r
+ .text.__smakebuf_r
+                0x000017a8       0x88 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-makebuf.o)
+                0x000017a8                __smakebuf_r
+ .text.__malloc_lock
+                0x00001830       0x10 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-mlock.o)
+                0x00001830                __malloc_lock
+ .text.__malloc_unlock
+                0x00001840       0x10 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-mlock.o)
+                0x00001840                __malloc_unlock
+ .text.__sfputc_r
+                0x00001850       0x2a C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+ .text.__sfputs_r
+                0x0000187a       0x24 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000187a                __sfputs_r
+ .text.__sprint_r
+                0x0000189e       0x1c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000189e                __sprint_r
+ *fill*         0x000018ba        0x2 
+ .text._vfprintf_r
+                0x000018bc      0x274 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x000018bc                _vfprintf_r
+                0x000018bc                _vfiprintf_r
+ .text.vfprintf
+                0x00001b30       0x18 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x00001b30                vfprintf
+                0x00001b30                vfiprintf
+ .text._printf_common
+                0x00001b48       0xde C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00001b48                _printf_common
+ *fill*         0x00001c26        0x2 
+ .text._printf_i
+                0x00001c28      0x224 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00001c28                _printf_i
+ .text._read_r  0x00001e4c       0x28 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-readr.o)
+                0x00001e4c                _read_r
+ .text._fstat_r
+                0x00001e74       0x24 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fstatr.o)
+                0x00001e74                _fstat_r
+ .text.__sfvwrite_r
+                0x00001e98      0x2d0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o)
+                0x00001e98                __sfvwrite_r
+ .text._isatty_r
+                0x00002168       0x24 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-isattyr.o)
+                0x00002168                _isatty_r
+ .text.memchr   0x0000218c       0x16 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memchr-stub.o)
+                0x0000218c                memchr
+ .text.memcpy   0x000021a2       0x12 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memcpy-stub.o)
+                0x000021a2                memcpy
+ .text.memmove  0x000021b4       0x26 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memmove.o)
+                0x000021b4                memmove
+ .text._realloc_r
+                0x000021da       0x5e C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-reallocr.o)
+                0x000021da                _realloc_r
+ .text._malloc_usable_size_r
+                0x00002238       0x10 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-msizer.o)
+                0x00002238                _malloc_usable_size_r
+ *(.rodata)
+ .rodata        0x00002248       0x16 init.o
+ *fill*         0x0000225e        0x2 
+ .rodata        0x00002260       0x6c main.o
+ .rodata        0x000022cc       0x15 serial.o
+ *fill*         0x000022e1        0x3 
+ .rodata        0x000022e4       0x1a newlib_stubs.o
+ *(.rodata*)
+ *fill*         0x000022fe        0x2 
+ .rodata.__sf_fake_stderr
+                0x00002300       0x20 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                0x00002300                __sf_fake_stderr
+ .rodata.__sf_fake_stdin
+                0x00002320       0x20 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                0x00002320                __sf_fake_stdin
+ .rodata.__sf_fake_stdout
+                0x00002340       0x20 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                0x00002340                __sf_fake_stdout
+ .rodata._global_impure_ptr
+                0x00002360        0x4 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-impure.o)
+                0x00002360                _global_impure_ptr
+ .rodata._vfprintf_r.str1.1
+                0x00002364       0x11 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+ .rodata._printf_i.str1.1
+                0x00002375       0x22 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00002397                _end_text = .
+
+.glue_7         0x00002398        0x0
+ .glue_7        0x00002398        0x0 linker stubs
+
+.glue_7t        0x00002398        0x0
+ .glue_7t       0x00002398        0x0 linker stubs
+
+.vfp11_veneer   0x00002398        0x0
+ .vfp11_veneer  0x00002398        0x0 linker stubs
+
+.v4_bx          0x00002398        0x0
+ .v4_bx         0x00002398        0x0 linker stubs
+
+.iplt           0x00002398        0x0
+ .iplt          0x00002398        0x0 init.o
+
+.rel.dyn        0x00002398        0x0
+ .rel.iplt      0x00002398        0x0 init.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00002397                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00002397                __exidx_end = .
+                0x10000000                . = ORIGIN (ram)
+                0x10000000                . = ALIGN (0x4)
+
+.data           0x10000000       0x68 load address 0x00002397
+                0x00002397                INIT_DATA_VALUES = LOADADDR (.data)
+                0x10000000                INIT_DATA_START = .
+ *(.data)
+ .data          0x10000000        0x0 init.o
+ .data          0x10000000        0x0 main.o
+ .data          0x10000000        0x0 serial.o
+ .data          0x10000000        0x4 newlib_stubs.o
+                0x10000000                environ
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_dvmd_tls.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fwalk.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-impure.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memset.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-freer.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-mallocr.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-printf.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-reent.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-sbrkr.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wbuf.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-writer.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wsetup.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-closer.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lseekr.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-makebuf.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-mlock.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-readr.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fstatr.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-isattyr.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memchr-stub.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memcpy-stub.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memmove.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-reallocr.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-msizer.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_shi.o)
+ .data          0x10000004        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+ *(.data*)
+ .data._impure_ptr
+                0x10000004        0x4 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-impure.o)
+                0x10000004                _impure_ptr
+ .data.impure_data
+                0x10000008       0x60 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-impure.o)
+                0x10000068                INIT_DATA_END = .
+
+.igot.plt       0x10000068        0x0 load address 0x000023ff
+ .igot.plt      0x10000068        0x0 init.o
+                0x10000068                . = ALIGN (0x4)
+                0x10000068                BSS_START = .
+
+.bss            0x10000068       0x3c load address 0x000023ff
+                0x10000068                __bss_start__ = .
+ *(.bss)
+ .bss           0x10000068        0x0 init.o
+ .bss           0x10000068        0x0 main.o
+ .bss           0x10000068       0x1c serial.o
+ .bss           0x10000084        0x8 newlib_stubs.o
+                0x10000084                __env
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_dvmd_tls.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fwalk.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-impure.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memset.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-freer.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-mallocr.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-printf.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-reent.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-sbrkr.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wbuf.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-writer.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wsetup.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-closer.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lseekr.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-makebuf.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-mlock.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-readr.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fstatr.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-isattyr.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memchr-stub.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memmove.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-reallocr.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-msizer.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_shi.o)
+ .bss           0x1000008c        0x0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+ *(.bss*)
+ .bss.__lock___arc4random_mutex
+                0x1000008c        0x1 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                0x1000008c                __lock___arc4random_mutex
+ .bss.__lock___at_quick_exit_mutex
+                0x1000008d        0x1 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                0x1000008d                __lock___at_quick_exit_mutex
+ .bss.__lock___atexit_recursive_mutex
+                0x1000008e        0x1 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                0x1000008e                __lock___atexit_recursive_mutex
+ .bss.__lock___dd_hash_mutex
+                0x1000008f        0x1 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                0x1000008f                __lock___dd_hash_mutex
+ .bss.__lock___env_recursive_mutex
+                0x10000090        0x1 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                0x10000090                __lock___env_recursive_mutex
+ .bss.__lock___malloc_recursive_mutex
+                0x10000091        0x1 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                0x10000091                __lock___malloc_recursive_mutex
+ .bss.__lock___sfp_recursive_mutex
+                0x10000092        0x1 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                0x10000092                __lock___sfp_recursive_mutex
+ .bss.__lock___sinit_recursive_mutex
+                0x10000093        0x1 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                0x10000093                __lock___sinit_recursive_mutex
+ .bss.__lock___tz_mutex
+                0x10000094        0x1 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                0x10000094                __lock___tz_mutex
+ *fill*         0x10000095        0x3 
+ .bss.__malloc_free_list
+                0x10000098        0x4 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x10000098                __malloc_free_list
+ .bss.__malloc_sbrk_start
+                0x1000009c        0x4 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x1000009c                __malloc_sbrk_start
+ .bss.errno     0x100000a0        0x4 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-reent.o)
+                0x100000a0                errno
+ *(COMMON)
+                0x100000a4                _ebss = .
+                0x100000a4                __bss_end__ = .
+                0x100000a4                BSS_END = .
+OUTPUT(main.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000     0x14a6
+ .debug_info    0x00000000      0x120 init.o
+ .debug_info    0x00000120      0x95b main.o
+ .debug_info    0x00000a7b      0x30b serial.o
+ .debug_info    0x00000d86      0x720 newlib_stubs.o
+
+.debug_abbrev   0x00000000      0x5f9
+ .debug_abbrev  0x00000000       0xef init.o
+ .debug_abbrev  0x000000ef      0x203 main.o
+ .debug_abbrev  0x000002f2      0x18a serial.o
+ .debug_abbrev  0x0000047c      0x17d newlib_stubs.o
+
+.debug_aranges  0x00000000       0x80
+ .debug_aranges
+                0x00000000       0x20 init.o
+ .debug_aranges
+                0x00000020       0x20 main.o
+ .debug_aranges
+                0x00000040       0x20 serial.o
+ .debug_aranges
+                0x00000060       0x20 newlib_stubs.o
+
+.debug_line     0x00000000      0x6bd
+ .debug_line    0x00000000       0xb9 init.o
+ .debug_line    0x000000b9      0x190 main.o
+ .debug_line    0x00000249      0x1c8 serial.o
+ .debug_line    0x00000411      0x2ac newlib_stubs.o
+
+.debug_str      0x00000000      0x7e4
+ .debug_str     0x00000000      0x11c init.o
+                                0x133 (size before relaxing)
+ .debug_str     0x0000011c      0x410 main.o
+                                0x518 (size before relaxing)
+ .debug_str     0x0000052c       0xb8 serial.o
+                                0x17b (size before relaxing)
+ .debug_str     0x000005e4      0x200 newlib_stubs.o
+                                0x39a (size before relaxing)
+
+.comment        0x00000000       0x49
+ .comment       0x00000000       0x49 init.o
+                                 0x4a (size before relaxing)
+ .comment       0x00000049       0x4a main.o
+ .comment       0x00000049       0x4a serial.o
+ .comment       0x00000049       0x4a newlib_stubs.o
+
+.ARM.attributes
+                0x00000000       0x2c
+ .ARM.attributes
+                0x00000000       0x2c init.o
+ .ARM.attributes
+                0x0000002c       0x2c main.o
+ .ARM.attributes
+                0x00000058       0x2c serial.o
+ .ARM.attributes
+                0x00000084       0x2c newlib_stubs.o
+ .ARM.attributes
+                0x000000b0       0x1e C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x000000ce       0x1e C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x000000ec       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+ .ARM.attributes
+                0x00000118       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+ .ARM.attributes
+                0x00000144       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fwalk.o)
+ .ARM.attributes
+                0x00000170       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000019c       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+ .ARM.attributes
+                0x000001c8       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000001f4       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-freer.o)
+ .ARM.attributes
+                0x00000220       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-mallocr.o)
+ .ARM.attributes
+                0x0000024c       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-printf.o)
+ .ARM.attributes
+                0x00000278       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o)
+ .ARM.attributes
+                0x000002a4       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-reent.o)
+ .ARM.attributes
+                0x000002d0       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x000002fc       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+ .ARM.attributes
+                0x00000328       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wbuf.o)
+ .ARM.attributes
+                0x00000354       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-writer.o)
+ .ARM.attributes
+                0x00000380       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wsetup.o)
+ .ARM.attributes
+                0x000003ac       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-closer.o)
+ .ARM.attributes
+                0x000003d8       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lseekr.o)
+ .ARM.attributes
+                0x00000404       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-makebuf.o)
+ .ARM.attributes
+                0x00000430       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-mlock.o)
+ .ARM.attributes
+                0x0000045c       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+ .ARM.attributes
+                0x00000488       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .ARM.attributes
+                0x000004b4       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-readr.o)
+ .ARM.attributes
+                0x000004e0       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fstatr.o)
+ .ARM.attributes
+                0x0000050c       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o)
+ .ARM.attributes
+                0x00000538       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-isattyr.o)
+ .ARM.attributes
+                0x00000564       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memchr-stub.o)
+ .ARM.attributes
+                0x00000590       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x000005bc       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x000005e8       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-reallocr.o)
+ .ARM.attributes
+                0x00000614       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-msizer.o)
+ .ARM.attributes
+                0x00000640       0x1e C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_shi.o)
+ .ARM.attributes
+                0x0000065e       0x1e C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+
+.debug_frame    0x00000000      0xdcc
+ .debug_frame   0x00000000       0x84 init.o
+ .debug_frame   0x00000084       0x68 main.o
+ .debug_frame   0x000000ec      0x16c serial.o
+ .debug_frame   0x00000258      0x22c newlib_stubs.o
+ .debug_frame   0x00000484       0x20 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+ .debug_frame   0x000004a4       0x68 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+ .debug_frame   0x0000050c      0x170 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+ .debug_frame   0x0000067c       0x58 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fwalk.o)
+ .debug_frame   0x000006d4       0xb0 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+ .debug_frame   0x00000784       0x20 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x000007a4       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x000007d0       0x50 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x00000820       0x50 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-printf.o)
+ .debug_frame   0x00000870       0x44 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o)
+ .debug_frame   0x000008b4       0x48 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-reent.o)
+ .debug_frame   0x000008fc       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x00000928       0x90 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+ .debug_frame   0x000009b8       0x48 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wbuf.o)
+ .debug_frame   0x00000a00       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-writer.o)
+ .debug_frame   0x00000a2c       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wsetup.o)
+ .debug_frame   0x00000a58       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-closer.o)
+ .debug_frame   0x00000a84       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lseekr.o)
+ .debug_frame   0x00000ab0       0x54 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-makebuf.o)
+ .debug_frame   0x00000b04       0x40 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-mlock.o)
+ .debug_frame   0x00000b44       0x9c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+ .debug_frame   0x00000be0       0x54 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x00000c34       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-readr.o)
+ .debug_frame   0x00000c60       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fstatr.o)
+ .debug_frame   0x00000c8c       0x30 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o)
+ .debug_frame   0x00000cbc       0x2c C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-isattyr.o)
+ .debug_frame   0x00000ce8       0x20 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memchr-stub.o)
+ .debug_frame   0x00000d08       0x28 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00000d30       0x28 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memmove.o)
+ .debug_frame   0x00000d58       0x34 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x00000d8c       0x20 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-msizer.o)
+ .debug_frame   0x00000dac       0x20 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+
+Cross Reference Table
+
+Symbol                                            File
+BSS_END                                           init.o
+BSS_START                                         init.o
+Default_Handler                                   init.o
+INIT_DATA_END                                     init.o
+INIT_DATA_START                                   init.o
+INIT_DATA_VALUES                                  init.o
+PrintNumber                                       serial.o
+Test_Handler                                      init.o
+UART0_isr                                         serial.o
+                                                  init.o
+Vectors                                           init.o
+__aeabi_idiv                                      C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o)
+                                                  serial.o
+__aeabi_idiv0                                     C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_dvmd_tls.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+__aeabi_idivmod                                   C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+                                                  serial.o
+__aeabi_ldiv0                                     C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_dvmd_tls.o)
+__aeabi_uidiv                                     C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+__aeabi_uidivmod                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+__divsi3                                          C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_divsi3.o)
+__env                                             newlib_stubs.o
+__fp_lock_all                                     C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+__fp_unlock_all                                   C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+__gnu_thumb1_case_shi                             C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_thumb1_case_shi.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+__lock___arc4random_mutex                         C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+__lock___at_quick_exit_mutex                      C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+__lock___atexit_recursive_mutex                   C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+__lock___dd_hash_mutex                            C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+__lock___env_recursive_mutex                      C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+__lock___malloc_recursive_mutex                   C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-mlock.o)
+__lock___sfp_recursive_mutex                      C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+__lock___sinit_recursive_mutex                    C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+__lock___tz_mutex                                 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+__malloc_free_list                                C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-mallocr.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-freer.o)
+__malloc_lock                                     C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-mlock.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-mallocr.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-freer.o)
+__malloc_sbrk_start                               C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-mallocr.o)
+__malloc_unlock                                   C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-mlock.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-mallocr.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-freer.o)
+__retarget_lock_acquire                           C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+__retarget_lock_acquire_recursive                 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-mlock.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+__retarget_lock_close                             C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+__retarget_lock_close_recursive                   C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+__retarget_lock_init                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+__retarget_lock_init_recursive                    C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+__retarget_lock_release                           C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+__retarget_lock_release_recursive                 C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-mlock.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+__retarget_lock_try_acquire                       C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+__retarget_lock_try_acquire_recursive             C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lock.o)
+__sclose                                          C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+__seofread                                        C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+__sf_fake_stderr                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wsetup.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wbuf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-impure.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+__sf_fake_stdin                                   C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wsetup.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wbuf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-impure.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+__sf_fake_stdout                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wsetup.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wbuf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-impure.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+__sflush_r                                        C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+__sfmoreglue                                      C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+__sfp                                             C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+__sfp_lock_acquire                                C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+__sfp_lock_release                                C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+__sfputs_r                                        C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+__sfvwrite_r                                      C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+__sinit                                           C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wsetup.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wbuf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-printf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+__sinit_lock_acquire                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+__sinit_lock_release                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+__smakebuf_r                                      C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-makebuf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wsetup.o)
+__sprint_r                                        C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+__sread                                           C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+__sseek                                           C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+__swbuf                                           C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wbuf.o)
+__swbuf_r                                         C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wbuf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o)
+__swhatbuf_r                                      C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-makebuf.o)
+__swrite                                          C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+__swsetup_r                                       C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wsetup.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wbuf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o)
+__udivsi3                                         C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\thumb\v6-m\nofp\libgcc.a(_udivsi3.o)
+_cleanup                                          C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+_cleanup_r                                        C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-makebuf.o)
+_close                                            newlib_stubs.o
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-closer.o)
+_close_r                                          C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-closer.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+_execve                                           newlib_stubs.o
+_exit                                             newlib_stubs.o
+_fflush_r                                         C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wbuf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+_fork                                             newlib_stubs.o
+_free_r                                           C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-freer.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-reallocr.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wsetup.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-reent.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+_fstat                                            newlib_stubs.o
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fstatr.o)
+_fstat_r                                          C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fstatr.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-makebuf.o)
+_fwalk                                            C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fwalk.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+_fwalk_reent                                      C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fwalk.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+_getpid                                           newlib_stubs.o
+_global_impure_ptr                                C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-impure.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+_impure_ptr                                       C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-impure.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wsetup.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-wbuf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-reent.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-printf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+                                                  main.o
+_iprintf_r                                        C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-printf.o)
+_isatty                                           newlib_stubs.o
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-isattyr.o)
+_isatty_r                                         C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-isattyr.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-makebuf.o)
+_kill                                             newlib_stubs.o
+_link                                             newlib_stubs.o
+_lseek                                            newlib_stubs.o
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lseekr.o)
+_lseek_r                                          C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lseekr.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+_malloc_r                                         C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-mallocr.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-reallocr.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-makebuf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+_malloc_usable_size_r                             C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-msizer.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-reallocr.o)
+_printf_common                                    C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+_printf_float                                     C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+_printf_i                                         C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+_printf_r                                         C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-printf.o)
+_puts_r                                           C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o)
+_read                                             newlib_stubs.o
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-readr.o)
+_read_r                                           C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-readr.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+_realloc_r                                        C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-reallocr.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o)
+_reclaim_reent                                    C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-reent.o)
+_sbrk                                             newlib_stubs.o
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-sbrkr.o)
+_sbrk_r                                           C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-sbrkr.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-mallocr.o)
+_stat                                             newlib_stubs.o
+_times                                            newlib_stubs.o
+_unlink                                           newlib_stubs.o
+_vfiprintf_r                                      C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+_vfprintf_r                                       C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-printf.o)
+_wait                                             newlib_stubs.o
+_write                                            newlib_stubs.o
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-writer.o)
+_write_r                                          C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-writer.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-stdio.o)
+cleanup_glue                                      C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-reent.o)
+clock_init                                        init.o
+egetc                                             serial.o
+                                                  newlib_stubs.o
+egets                                             serial.o
+environ                                           newlib_stubs.o
+eputc                                             serial.o
+                                                  newlib_stubs.o
+eputs                                             serial.o
+errno                                             C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-reent.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-isattyr.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fstatr.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-readr.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-lseekr.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-closer.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-writer.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-sbrkr.o)
+                                                  newlib_stubs.o
+fflush                                            C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fflush.o)
+                                                  main.o
+getBuf                                            serial.o
+init                                              init.o
+initUART                                          serial.o
+                                                  main.o
+iprintf                                           C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-printf.o)
+main                                              main.o
+                                                  init.o
+memchr                                            C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memchr-stub.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+memcpy                                            C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memcpy-stub.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-reallocr.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o)
+memmove                                           C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memmove.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-fvwrite.o)
+memset                                            C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-memset.o)
+                                                  C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-findfp.o)
+printString                                       serial.o
+                                                  newlib_stubs.o
+                                                  init.o
+printf                                            C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-printf.o)
+                                                  main.o
+putBuf                                            serial.o
+puts                                              C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-puts.o)
+                                                  main.o
+rx_count                                          serial.o
+vfiprintf                                         C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+vfprintf                                          C:\Programs\GNU Tools ARM Embedded\10.3-2021.10\arm-none-eabi\lib\thumb\v6-m\nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+wait_1ms                                          main.o
+waitms                                            main.o
