@@ -1,0 +1,6 @@
+path=C:\Users\keybo\Documents\GitHub\292lab5\call51\Bin\..\lib\small
+lib=libc51.lib
+lib=libint.lib
+lib=liblong.lib
+lib=libfloat.lib
+obj=lcd.obj

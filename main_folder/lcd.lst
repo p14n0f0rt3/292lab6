@@ -1,0 +1,605 @@
+0000              1   ;--------------------------------------------------------
+0000              2   ; File Created by C51
+0000              3   ; Version 1.0.0 #1170 (Feb 16 2022) (MSVC)
+0000              4   ; This file was generated Fri Mar 08 17:12:48 2024
+0000              5   ;--------------------------------------------------------
+                  5   $name lcd
+                  6   $optc51 --model-small
+0000              8            R_DSEG    segment data
+0000              9            R_CSEG    segment code
+0000             10            R_BSEG    segment bit
+0000             11            R_XSEG    segment xdata
+0000             12            R_PSEG    segment xdata
+0000             13            R_ISEG    segment idata
+0000             14            R_OSEG    segment data overlay
+0000             15            BIT_BANK  segment data overlay
+0000             16            R_HOME    segment code
+0000             17            R_GSINIT  segment code
+0000             18            R_IXSEG   segment xdata
+0000             19            R_CONST   segment code
+0000             20            R_XINIT   segment code
+0000             21            R_DINIT   segment code
+0000             22   
+0000             23   ;--------------------------------------------------------
+0000             24   ; Public variables in this module
+0000             25   ;--------------------------------------------------------
+0000             26            public _main
+0000             27            public _LCDprint_PARM_3
+0000             28            public _LCDprint_PARM_2
+0000             29            public _Delay_us
+0000             30            public _waitms
+0000             31            public _LCD_pulse
+0000             32            public _LCD_byte
+0000             33            public _WriteData
+0000             34            public _WriteCommand
+0000             35            public _LCD_4BIT
+0000             36            public _LCDprint
+0000             37   ;--------------------------------------------------------
+0000             38   ; Special Function Registers
+0000             39   ;--------------------------------------------------------
+0000             40   ;--------------------------------------------------------
+0000             41   ; special function bits
+0000             42   ;--------------------------------------------------------
+0000             43   ;--------------------------------------------------------
+0000             44   ; overlayable register banks
+0000             45   ;--------------------------------------------------------
+0000             46            rbank0 segment data overlay
+0000             47   ;--------------------------------------------------------
+0000             48   ; internal ram data
+0000             49   ;--------------------------------------------------------
+0000             50            rseg R_DSEG
+0000             51   _LCDprint_PARM_2:
+0000             52            ds 1
+0001             53   _LCDprint_PARM_3:
+0001             54            ds 1
+0002             55   ;--------------------------------------------------------
+0002             56   ; overlayable items in internal ram 
+0002             57   ;--------------------------------------------------------
+0000             58            rseg R_OSEG
+0000             59   ;--------------------------------------------------------
+0000             60   ; indirectly addressable internal ram data
+0000             61   ;--------------------------------------------------------
+0000             62            rseg R_ISEG
+0000             63   ;--------------------------------------------------------
+0000             64   ; absolute internal ram data
+0000             65   ;--------------------------------------------------------
+0000             66            DSEG
+0000             67   ;--------------------------------------------------------
+0000             68   ; bit data
+0000             69   ;--------------------------------------------------------
+0000             70            rseg R_BSEG
+0000             71   ;--------------------------------------------------------
+0000             72   ; paged external ram data
+0000             73   ;--------------------------------------------------------
+0000             74            rseg R_PSEG
+0000             75   ;--------------------------------------------------------
+0000             76   ; external ram data
+0000             77   ;--------------------------------------------------------
+0000             78            rseg R_XSEG
+0000             79   ;--------------------------------------------------------
+0000             80   ; absolute external ram data
+0000             81   ;--------------------------------------------------------
+0000             82            XSEG
+0000             83   ;--------------------------------------------------------
+0000             84   ; external initialized ram data
+0000             85   ;--------------------------------------------------------
+0000             86            rseg R_IXSEG
+0000             87            rseg R_HOME
+0000             88            rseg R_GSINIT
+0000             89            rseg R_CSEG
+0000             90   ;--------------------------------------------------------
+0000             91   ; Reset entry point and interrupt vectors
+0000             92   ;--------------------------------------------------------
+0000             93            CSEG at 0x0000
+0000 020000      94            ljmp    _crt0
+0003             95   ;--------------------------------------------------------
+0003             96   ; global & static initialisations
+0003             97   ;--------------------------------------------------------
+0000             98            rseg R_HOME
+0000             99            rseg R_GSINIT
+0000            100            rseg R_GSINIT
+0000            101   ;--------------------------------------------------------
+0000            102   ; data variables initialization
+0000            103   ;--------------------------------------------------------
+0000            104            rseg R_DINIT
+0000            105            ; The linker places a 'ret' at the end of segment R_DINIT.
+0000            106   ;--------------------------------------------------------
+0000            107   ; code
+0000            108   ;--------------------------------------------------------
+0000            109            rseg R_CSEG
+0000            110   ;------------------------------------------------------------
+0000            111   ;Allocation info for local variables in function 'Delay_us'
+0000            112   ;------------------------------------------------------------
+0000            113   ;us                        Allocated to registers r2 
+0000            114   ;------------------------------------------------------------
+0000            115   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:6: void Delay_us(unsigned char us)
+0000            116   ;        -----------------------------------------
+0000            117   ;         function Delay_us
+0000            118   ;        -----------------------------------------
+0000            119   _Delay_us:
+0000            120            using   0
+0000 AA82       121            mov     r2,dpl
+0002            122   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:9: SYST_RVR = (F_CPU/(1000000L/us)) - 1;  // set reload register, counter rolls over from zero, hence -1
+0002 8A00       123            mov     __divslong_PARM_2,r2
+0004 750100     124            mov     (__divslong_PARM_2 + 1),#0x00
+0007 750200     125            mov     (__divslong_PARM_2 + 2),#0x00
+000A 750300     126            mov     (__divslong_PARM_2 + 3),#0x00
+000D 904240     127            mov     dptr,#0x4240
+0010 75F00F     128            mov     b,#0x0F
+0013 E4         129            clr     a
+0014 120000     130            lcall   __divslong
+0017 858200     131            mov     __divslong_PARM_2,dpl
+001A 858301     132            mov     (__divslong_PARM_2 + 1),dph
+001D 85F002     133            mov     (__divslong_PARM_2 + 2),b
+0020 F503       134            mov     (__divslong_PARM_2 + 3),a
+0022 90C380     135            mov     dptr,#0xC380
+0025 75F0C9     136            mov     b,#0xC9
+0028 7401       137            mov     a,#0x01
+002A 120000     138            lcall   __divslong
+002D AA82       139            mov     r2,dpl
+002F AB83       140            mov     r3,dph
+0031 ACF0       141            mov     r4,b
+0033 FD         142            mov     r5,a
+0034 1A         143            dec     r2
+0035 BAFF00     144            cjne    r2,#0xff,L002008?
+0038 1B         145            dec     r3
+0039 BBFF00     146            cjne    r3,#0xff,L002008?
+003C 1C         147            dec     r4
+003D BCFF00     148            cjne    r4,#0xff,L002008?
+0040 1D         149            dec     r5
+0041            150   L002008?:
+0041 90E014     151            mov     dptr,#0xE014
+0044 75F000     152            mov     b,#0x00
+0047 EA         153            mov     a,r2
+0048 120000     154            lcall   __gptrput
+004B A3         155            inc     dptr
+004C EB         156            mov     a,r3
+004D 120000     157            lcall   __gptrput
+0050            158   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:10: SYST_CVR = 0; // load the SysTick counter
+0050 90E018     159            mov     dptr,#0xE018
+0053 E4         160            clr     a
+0054 F5F0       161            mov     b,a
+0056 120000     162            lcall   __gptrput
+0059 A3         163            inc     dptr
+005A E4         164            clr     a
+005B 120000     165            lcall   __gptrput
+005E            166   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:11: SYST_CSR = 0x05; // Bit 0: ENABLE, BIT 1: TICKINT, BIT 2:CLKSOURCE
+005E 90E010     167            mov     dptr,#0xE010
+0061 75F000     168            mov     b,#0x00
+0064 7405       169            mov     a,#0x05
+0066 120000     170            lcall   __gptrput
+0069 A3         171            inc     dptr
+006A E4         172            clr     a
+006B 120000     173            lcall   __gptrput
+006E            174   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:12: while((SYST_CSR & BIT16)==0); // Bit 16 is the COUNTFLAG.  True when counter rolls over from zero.
+006E            175   L002001?:
+006E 90E010     176            mov     dptr,#0xE010
+0071 75F000     177            mov     b,#0x00
+0074 120000     178            lcall   __gptrget
+0077 A3         179            inc     dptr
+0078 120000     180            lcall   __gptrget
+007B E4         181            clr     a
+007C FA         182            mov     r2,a
+007D FB         183            mov     r3,a
+007E 4A         184            orl     a,r2
+007F 6000       185            jz      L002001?
+0081            186   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:13: SYST_CSR = 0x00; // Disable Systick counter
+0081 90E010     187            mov     dptr,#0xE010
+0084 E4         188            clr     a
+0085 F5F0       189            mov     b,a
+0087 120000     190            lcall   __gptrput
+008A A3         191            inc     dptr
+008B E4         192            clr     a
+008C 020000     193            ljmp    __gptrput
+008F            194   ;------------------------------------------------------------
+008F            195   ;Allocation info for local variables in function 'waitms'
+008F            196   ;------------------------------------------------------------
+008F            197   ;ms                        Allocated to registers r2 r3 
+008F            198   ;j                         Allocated to registers r4 r5 
+008F            199   ;k                         Allocated to registers r6 
+008F            200   ;------------------------------------------------------------
+008F            201   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:16: void waitms (unsigned int ms)
+008F            202   ;        -----------------------------------------
+008F            203   ;         function waitms
+008F            204   ;        -----------------------------------------
+008F            205   _waitms:
+008F AA82       206            mov     r2,dpl
+0091 AB83       207            mov     r3,dph
+0093            208   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:20: for(j=0; j<ms; j++)
+0093 7C00       209            mov     r4,#0x00
+0095 7D00       210            mov     r5,#0x00
+0097            211   L003005?:
+0097 C3         212            clr     c
+0098 EC         213            mov     a,r4
+0099 9A         214            subb    a,r2
+009A ED         215            mov     a,r5
+009B 9B         216            subb    a,r3
+009C 5000       217            jnc     L003009?
+009E            218   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:21: for (k=0; k<4; k++) Delay_us(250);
+009E 7E00       219            mov     r6,#0x00
+00A0            220   L003001?:
+00A0 BE04C0     221            cjne    r6,#0x04,L003018?
+00A3            222   L003018?:
+00A3 5000       223            jnc     L003007?
+00A5 7582FA     224            mov     dpl,#0xFA
+00A8 C002       225            push    ar2
+00AA C003       226            push    ar3
+00AC C004       227            push    ar4
+00AE C005       228            push    ar5
+00B0 C006       229            push    ar6
+00B2 120000     230            lcall   _Delay_us
+00B5 D006       231            pop     ar6
+00B7 D005       232            pop     ar5
+00B9 D004       233            pop     ar4
+00BB D003       234            pop     ar3
+00BD D002       235            pop     ar2
+00BF 0E         236            inc     r6
+00C0 8000       237            sjmp    L003001?
+00C2            238   L003007?:
+00C2            239   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:20: for(j=0; j<ms; j++)
+00C2 0C         240            inc     r4
+00C3 BC0000     241            cjne    r4,#0x00,L003005?
+00C6 0D         242            inc     r5
+00C7 8000       243            sjmp    L003005?
+00C9            244   L003009?:
+00C9 22         245            ret
+00CA            246   ;------------------------------------------------------------
+00CA            247   ;Allocation info for local variables in function 'LCD_pulse'
+00CA            248   ;------------------------------------------------------------
+00CA            249   ;------------------------------------------------------------
+00CA            250   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:24: void LCD_pulse (void)
+00CA            251   ;        -----------------------------------------
+00CA            252   ;         function LCD_pulse
+00CA            253   ;        -----------------------------------------
+00CA            254   _LCD_pulse:
+00CA            255   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:26: LCD_E_1;
+00CA 90000D     256            mov     dptr,#(0x0D&0x00ff)
+00CD E4         257            clr     a
+00CE F5F0       258            mov     b,a
+00D0 7401       259            mov     a,#0x01
+00D2 120000     260            lcall   __gptrput
+00D5            261   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:27: Delay_us(40);
+00D5 758228     262            mov     dpl,#0x28
+00D8 120000     263            lcall   _Delay_us
+00DB            264   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:28: LCD_E_0;
+00DB 90000D     265            mov     dptr,#0x000D
+00DE E4         266            clr     a
+00DF F5F0       267            mov     b,a
+00E1 020000     268            ljmp    __gptrput
+00E4            269   ;------------------------------------------------------------
+00E4            270   ;Allocation info for local variables in function 'LCD_byte'
+00E4            271   ;------------------------------------------------------------
+00E4            272   ;x                         Allocated to registers r2 
+00E4            273   ;------------------------------------------------------------
+00E4            274   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:31: void LCD_byte (unsigned char x)
+00E4            275   ;        -----------------------------------------
+00E4            276   ;         function LCD_byte
+00E4            277   ;        -----------------------------------------
+00E4            278   _LCD_byte:
+00E4            279   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:34: if(x&0x80) LCD_D7_1; else LCD_D7_0;
+00E4 E582       280            mov     a,dpl
+00E6 FA         281            mov     r2,a
+00E7 30E780     282            jnb     acc.7,L005002?
+00EA 90000A     283            mov     dptr,#(0x0A&0x00ff)
+00ED E4         284            clr     a
+00EE F5F0       285            mov     b,a
+00F0 7401       286            mov     a,#0x01
+00F2 120000     287            lcall   __gptrput
+00F5 8000       288            sjmp    L005003?
+00F7            289   L005002?:
+00F7 90000A     290            mov     dptr,#0x000A
+00FA E4         291            clr     a
+00FB F5F0       292            mov     b,a
+00FD 120000     293            lcall   __gptrput
+0100            294   L005003?:
+0100            295   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:35: if(x&0x40) LCD_D6_1; else LCD_D6_0;
+0100 EA         296            mov     a,r2
+0101 30E600     297            jnb     acc.6,L005005?
+0104 90000B     298            mov     dptr,#(0x0B&0x00ff)
+0107 E4         299            clr     a
+0108 F5F0       300            mov     b,a
+010A 7401       301            mov     a,#0x01
+010C 120000     302            lcall   __gptrput
+010F 8000       303            sjmp    L005006?
+0111            304   L005005?:
+0111 90000B     305            mov     dptr,#0x000B
+0114 E4         306            clr     a
+0115 F5F0       307            mov     b,a
+0117 120000     308            lcall   __gptrput
+011A            309   L005006?:
+011A            310   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:36: if(x&0x20) LCD_D5_1; else LCD_D5_0;
+011A EA         311            mov     a,r2
+011B 30E580     312            jnb     acc.5,L005008?
+011E 900002     313            mov     dptr,#(0x02&0x00ff)
+0121 E4         314            clr     a
+0122 F5F0       315            mov     b,a
+0124 7401       316            mov     a,#0x01
+0126 120000     317            lcall   __gptrput
+0129 8000       318            sjmp    L005009?
+012B            319   L005008?:
+012B 900002     320            mov     dptr,#0x0002
+012E E4         321            clr     a
+012F F5F0       322            mov     b,a
+0131 120000     323            lcall   __gptrput
+0134            324   L005009?:
+0134            325   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:37: if(x&0x10) LCD_D4_1; else LCD_D4_0;
+0134 EA         326            mov     a,r2
+0135 30E400     327            jnb     acc.4,L005011?
+0138 900003     328            mov     dptr,#(0x03&0x00ff)
+013B E4         329            clr     a
+013C F5F0       330            mov     b,a
+013E 7401       331            mov     a,#0x01
+0140 120000     332            lcall   __gptrput
+0143 8000       333            sjmp    L005012?
+0145            334   L005011?:
+0145 900003     335            mov     dptr,#0x0003
+0148 E4         336            clr     a
+0149 F5F0       337            mov     b,a
+014B 120000     338            lcall   __gptrput
+014E            339   L005012?:
+014E            340   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:38: LCD_pulse();
+014E C002       341            push    ar2
+0150 120000     342            lcall   _LCD_pulse
+0153            343   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:39: Delay_us(40);
+0153 758228     344            mov     dpl,#0x28
+0156 120000     345            lcall   _Delay_us
+0159 D002       346            pop     ar2
+015B            347   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:41: if(x&0x08) LCD_D7_1; else LCD_D7_0;
+015B EA         348            mov     a,r2
+015C 30E390     349            jnb     acc.3,L005014?
+015F 90000A     350            mov     dptr,#(0x0A&0x00ff)
+0162 E4         351            clr     a
+0163 F5F0       352            mov     b,a
+0165 7401       353            mov     a,#0x01
+0167 120000     354            lcall   __gptrput
+016A 8000       355            sjmp    L005015?
+016C            356   L005014?:
+016C 90000A     357            mov     dptr,#0x000A
+016F E4         358            clr     a
+0170 F5F0       359            mov     b,a
+0172 120000     360            lcall   __gptrput
+0175            361   L005015?:
+0175            362   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:42: if(x&0x04) LCD_D6_1; else LCD_D6_0;
+0175 EA         363            mov     a,r2
+0176 30E210     364            jnb     acc.2,L005017?
+0179 90000B     365            mov     dptr,#(0x0B&0x00ff)
+017C E4         366            clr     a
+017D F5F0       367            mov     b,a
+017F 7401       368            mov     a,#0x01
+0181 120000     369            lcall   __gptrput
+0184 8000       370            sjmp    L005018?
+0186            371   L005017?:
+0186 90000B     372            mov     dptr,#0x000B
+0189 E4         373            clr     a
+018A F5F0       374            mov     b,a
+018C 120000     375            lcall   __gptrput
+018F            376   L005018?:
+018F            377   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:43: if(x&0x02) LCD_D5_1; else LCD_D5_0;
+018F EA         378            mov     a,r2
+0190 30E190     379            jnb     acc.1,L005020?
+0193 900002     380            mov     dptr,#(0x02&0x00ff)
+0196 E4         381            clr     a
+0197 F5F0       382            mov     b,a
+0199 7401       383            mov     a,#0x01
+019B 120000     384            lcall   __gptrput
+019E 8000       385            sjmp    L005021?
+01A0            386   L005020?:
+01A0 900002     387            mov     dptr,#0x0002
+01A3 E4         388            clr     a
+01A4 F5F0       389            mov     b,a
+01A6 120000     390            lcall   __gptrput
+01A9            391   L005021?:
+01A9            392   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:44: if(x&0x01) LCD_D4_1; else LCD_D4_0;
+01A9 EA         393            mov     a,r2
+01AA 30E010     394            jnb     acc.0,L005023?
+01AD 900003     395            mov     dptr,#(0x03&0x00ff)
+01B0 E4         396            clr     a
+01B1 F5F0       397            mov     b,a
+01B3 7401       398            mov     a,#0x01
+01B5 120000     399            lcall   __gptrput
+01B8 8000       400            sjmp    L005024?
+01BA            401   L005023?:
+01BA 900003     402            mov     dptr,#0x0003
+01BD E4         403            clr     a
+01BE F5F0       404            mov     b,a
+01C0 120000     405            lcall   __gptrput
+01C3            406   L005024?:
+01C3            407   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:45: LCD_pulse();
+01C3 020000     408            ljmp    _LCD_pulse
+01C6            409   ;------------------------------------------------------------
+01C6            410   ;Allocation info for local variables in function 'WriteData'
+01C6            411   ;------------------------------------------------------------
+01C6            412   ;x                         Allocated to registers r2 
+01C6            413   ;------------------------------------------------------------
+01C6            414   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:48: void WriteData (unsigned char x)
+01C6            415   ;        -----------------------------------------
+01C6            416   ;         function WriteData
+01C6            417   ;        -----------------------------------------
+01C6            418   _WriteData:
+01C6 AA82       419            mov     r2,dpl
+01C8            420   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:50: LCD_RS_1;
+01C8 900011     421            mov     dptr,#(0x11&0x00ff)
+01CB E4         422            clr     a
+01CC F5F0       423            mov     b,a
+01CE 7401       424            mov     a,#0x01
+01D0 120000     425            lcall   __gptrput
+01D3            426   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:51: LCD_byte(x);
+01D3 8A82       427            mov     dpl,r2
+01D5 120000     428            lcall   _LCD_byte
+01D8            429   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:52: waitms(2);
+01D8 900002     430            mov     dptr,#0x0002
+01DB 020000     431            ljmp    _waitms
+01DE            432   ;------------------------------------------------------------
+01DE            433   ;Allocation info for local variables in function 'WriteCommand'
+01DE            434   ;------------------------------------------------------------
+01DE            435   ;x                         Allocated to registers r2 
+01DE            436   ;------------------------------------------------------------
+01DE            437   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:55: void WriteCommand (unsigned char x)
+01DE            438   ;        -----------------------------------------
+01DE            439   ;         function WriteCommand
+01DE            440   ;        -----------------------------------------
+01DE            441   _WriteCommand:
+01DE AA82       442            mov     r2,dpl
+01E0            443   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:57: LCD_RS_0;
+01E0 900011     444            mov     dptr,#0x0011
+01E3 E4         445            clr     a
+01E4 F5F0       446            mov     b,a
+01E6 120000     447            lcall   __gptrput
+01E9            448   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:58: LCD_byte(x);
+01E9 8A82       449            mov     dpl,r2
+01EB 120000     450            lcall   _LCD_byte
+01EE            451   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:59: waitms(5);
+01EE 900005     452            mov     dptr,#0x0005
+01F1 020000     453            ljmp    _waitms
+01F4            454   ;------------------------------------------------------------
+01F4            455   ;Allocation info for local variables in function 'LCD_4BIT'
+01F4            456   ;------------------------------------------------------------
+01F4            457   ;------------------------------------------------------------
+01F4            458   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:62: void LCD_4BIT (void)
+01F4            459   ;        -----------------------------------------
+01F4            460   ;         function LCD_4BIT
+01F4            461   ;        -----------------------------------------
+01F4            462   _LCD_4BIT:
+01F4            463   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:64: LCD_E_0; // Resting state of LCD's enable is zero
+01F4 90000D     464            mov     dptr,#0x000D
+01F7 E4         465            clr     a
+01F8 F5F0       466            mov     b,a
+01FA 120000     467            lcall   __gptrput
+01FD            468   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:66: waitms(20);
+01FD 900014     469            mov     dptr,#0x0014
+0200 120000     470            lcall   _waitms
+0203            471   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:68: WriteCommand(0x33);
+0203 758233     472            mov     dpl,#0x33
+0206 120000     473            lcall   _WriteCommand
+0209            474   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:69: WriteCommand(0x33);
+0209 758233     475            mov     dpl,#0x33
+020C 120000     476            lcall   _WriteCommand
+020F            477   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:70: WriteCommand(0x32); // Change to 4-bit mode
+020F 758232     478            mov     dpl,#0x32
+0212 120000     479            lcall   _WriteCommand
+0215            480   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:73: WriteCommand(0x28);
+0215 758228     481            mov     dpl,#0x28
+0218 120000     482            lcall   _WriteCommand
+021B            483   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:74: WriteCommand(0x0c);
+021B 75820C     484            mov     dpl,#0x0C
+021E 120000     485            lcall   _WriteCommand
+0221            486   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:75: WriteCommand(0x01); // Clear screen command (takes some time)
+0221 758201     487            mov     dpl,#0x01
+0224 120000     488            lcall   _WriteCommand
+0227            489   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:76: waitms(20); // Wait for clear screen command to finsih.
+0227 900014     490            mov     dptr,#0x0014
+022A 020000     491            ljmp    _waitms
+022D            492   ;------------------------------------------------------------
+022D            493   ;Allocation info for local variables in function 'LCDprint'
+022D            494   ;------------------------------------------------------------
+022D            495   ;line                      Allocated with name '_LCDprint_PARM_2'
+022D            496   ;clear                     Allocated with name '_LCDprint_PARM_3'
+022D            497   ;string                    Allocated to registers r2 r3 r4 
+022D            498   ;j                         Allocated to registers r5 r6 
+022D            499   ;------------------------------------------------------------
+022D            500   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:79: void LCDprint(char * string, unsigned char line, unsigned char clear)
+022D            501   ;        -----------------------------------------
+022D            502   ;         function LCDprint
+022D            503   ;        -----------------------------------------
+022D            504   _LCDprint:
+022D AA82       505            mov     r2,dpl
+022F AB83       506            mov     r3,dph
+0231 ACF0       507            mov     r4,b
+0233            508   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:83: WriteCommand(line==2?0xc0:0x80);
+0233 7402       509            mov     a,#0x02
+0235 B5F090     510            cjne    a,_LCDprint_PARM_2,L009013?
+0238 7DC0       511            mov     r5,#0xC0
+023A 8000       512            sjmp    L009014?
+023C            513   L009013?:
+023C 7D80       514            mov     r5,#0x80
+023E            515   L009014?:
+023E 8D82       516            mov     dpl,r5
+0240 C002       517            push    ar2
+0242 C003       518            push    ar3
+0244 C004       519            push    ar4
+0246 120000     520            lcall   _WriteCommand
+0249            521   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:84: waitms(5);
+0249 900005     522            mov     dptr,#0x0005
+024C 120000     523            lcall   _waitms
+024F D004       524            pop     ar4
+0251 D003       525            pop     ar3
+0253 D002       526            pop     ar2
+0255            527   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:85: for(j=0; string[j]!=0; j++)       WriteData(string[j]);// Write the message
+0255 7D00       528            mov     r5,#0x00
+0257 7E00       529            mov     r6,#0x00
+0259            530   L009003?:
+0259 ED         531            mov     a,r5
+025A 2A         532            add     a,r2
+025B FF         533            mov     r7,a
+025C EE         534            mov     a,r6
+025D 3B         535            addc    a,r3
+025E F8         536            mov     r0,a
+025F 8C01       537            mov     ar1,r4
+0261 8F82       538            mov     dpl,r7
+0263 8883       539            mov     dph,r0
+0265 89F0       540            mov     b,r1
+0267 120000     541            lcall   __gptrget
+026A FF         542            mov     r7,a
+026B 6000       543            jz      L009006?
+026D 8F82       544            mov     dpl,r7
+026F C002       545            push    ar2
+0271 C003       546            push    ar3
+0273 C004       547            push    ar4
+0275 C005       548            push    ar5
+0277 C006       549            push    ar6
+0279 120000     550            lcall   _WriteData
+027C D006       551            pop     ar6
+027E D005       552            pop     ar5
+0280 D004       553            pop     ar4
+0282 D003       554            pop     ar3
+0284 D002       555            pop     ar2
+0286 0D         556            inc     r5
+0287 BD0010     557            cjne    r5,#0x00,L009003?
+028A 0E         558            inc     r6
+028B 8000       559            sjmp    L009003?
+028D            560   L009006?:
+028D            561   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:86: if(clear) for(; j<CHARS_PER_LINE; j++) WriteData(' '); // Clear the rest of the line
+028D E5A0       562            mov     a,_LCDprint_PARM_3
+028F 6000       563            jz      L009011?
+0291 8D02       564            mov     ar2,r5
+0293 8E03       565            mov     ar3,r6
+0295            566   L009007?:
+0295 C3         567            clr     c
+0296 EA         568            mov     a,r2
+0297 9410       569            subb    a,#0x10
+0299 EB         570            mov     a,r3
+029A 6480       571            xrl     a,#0x80
+029C 9480       572            subb    a,#0x80
+029E 5000       573            jnc     L009011?
+02A0 758220     574            mov     dpl,#0x20
+02A3 C002       575            push    ar2
+02A5 C003       576            push    ar3
+02A7 120000     577            lcall   _WriteData
+02AA D003       578            pop     ar3
+02AC D002       579            pop     ar2
+02AE 0A         580            inc     r2
+02AF BA00D0     581            cjne    r2,#0x00,L009007?
+02B2 0B         582            inc     r3
+02B3 8000       583            sjmp    L009007?
+02B5            584   L009011?:
+02B5 22         585            ret
+02B6            586   ;------------------------------------------------------------
+02B6            587   ;Allocation info for local variables in function 'main'
+02B6            588   ;------------------------------------------------------------
+02B6            589   ;------------------------------------------------------------
+02B6            590   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:89: int main(void) {
+02B6            591   ;        -----------------------------------------
+02B6            592   ;         function main
+02B6            593   ;        -----------------------------------------
+02B6            594   _main:
+02B6            595   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\lcd.c:90: return;
+02B6 22         596            ret
+02B7            597            rseg R_CSEG
+02B7            598   
+0000            599            rseg R_XINIT
+0000            600   
+0000            601            rseg R_CONST
+0000            602   
+0003            603            CSEG
+0003            604   
+0003            605   end

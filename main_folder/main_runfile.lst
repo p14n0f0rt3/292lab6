@@ -1,0 +1,788 @@
+0000              1   ;--------------------------------------------------------
+0000              2   ; File Created by C51
+0000              3   ; Version 1.0.0 #1170 (Feb 16 2022) (MSVC)
+0000              4   ; This file was generated Fri Mar 08 17:10:33 2024
+0000              5   ;--------------------------------------------------------
+                  5   $name main_runfile
+                  6   $optc51 --model-small
+0000              8            R_DSEG    segment data
+0000              9            R_CSEG    segment code
+0000             10            R_BSEG    segment bit
+0000             11            R_XSEG    segment xdata
+0000             12            R_PSEG    segment xdata
+0000             13            R_ISEG    segment idata
+0000             14            R_OSEG    segment data overlay
+0000             15            BIT_BANK  segment data overlay
+0000             16            R_HOME    segment code
+0000             17            R_GSINIT  segment code
+0000             18            R_IXSEG   segment xdata
+0000             19            R_CONST   segment code
+0000             20            R_XINIT   segment code
+0000             21            R_DINIT   segment code
+0000             22   
+0000             23   ;--------------------------------------------------------
+0000             24   ; Public variables in this module
+0000             25   ;--------------------------------------------------------
+0000             26            public _main
+0000             27            public _ConfigPins
+0000             28            public _GetPeriod
+0000             29            public _wait_1ms
+0000             30   ;--------------------------------------------------------
+0000             31   ; Special Function Registers
+0000             32   ;--------------------------------------------------------
+0000             33   ;--------------------------------------------------------
+0000             34   ; special function bits
+0000             35   ;--------------------------------------------------------
+0000             36   ;--------------------------------------------------------
+0000             37   ; overlayable register banks
+0000             38   ;--------------------------------------------------------
+0000             39            rbank0 segment data overlay
+0000             40   ;--------------------------------------------------------
+0000             41   ; internal ram data
+0000             42   ;--------------------------------------------------------
+0000             43            rseg R_DSEG
+0000             44   _main_buff_1_30:
+0000             45            ds 17
+0011             46   ;--------------------------------------------------------
+0011             47   ; overlayable items in internal ram 
+0011             48   ;--------------------------------------------------------
+0000             49            rseg    R_OSEG
+0000             50   ;--------------------------------------------------------
+0000             51   ; indirectly addressable internal ram data
+0000             52   ;--------------------------------------------------------
+0000             53            rseg R_ISEG
+0000             54   ;--------------------------------------------------------
+0000             55   ; absolute internal ram data
+0000             56   ;--------------------------------------------------------
+0000             57            DSEG
+0000             58   ;--------------------------------------------------------
+0000             59   ; bit data
+0000             60   ;--------------------------------------------------------
+0000             61            rseg R_BSEG
+0000             62   ;--------------------------------------------------------
+0000             63   ; paged external ram data
+0000             64   ;--------------------------------------------------------
+0000             65            rseg R_PSEG
+0000             66   ;--------------------------------------------------------
+0000             67   ; external ram data
+0000             68   ;--------------------------------------------------------
+0000             69            rseg R_XSEG
+0000             70   ;--------------------------------------------------------
+0000             71   ; absolute external ram data
+0000             72   ;--------------------------------------------------------
+0000             73            XSEG
+0000             74   ;--------------------------------------------------------
+0000             75   ; external initialized ram data
+0000             76   ;--------------------------------------------------------
+0000             77            rseg R_IXSEG
+0000             78            rseg R_HOME
+0000             79            rseg R_GSINIT
+0000             80            rseg R_CSEG
+0000             81   ;--------------------------------------------------------
+0000             82   ; Reset entry point and interrupt vectors
+0000             83   ;--------------------------------------------------------
+0000             84            CSEG at 0x0000
+0000 020000      85            ljmp    _crt0
+0003             86   ;--------------------------------------------------------
+0003             87   ; global & static initialisations
+0003             88   ;--------------------------------------------------------
+0000             89            rseg R_HOME
+0000             90            rseg R_GSINIT
+0000             91            rseg R_GSINIT
+0000             92   ;--------------------------------------------------------
+0000             93   ; data variables initialization
+0000             94   ;--------------------------------------------------------
+0000             95            rseg R_DINIT
+0000             96            ; The linker places a 'ret' at the end of segment R_DINIT.
+0000             97   ;--------------------------------------------------------
+0000             98   ; code
+0000             99   ;--------------------------------------------------------
+0000            100            rseg R_CSEG
+0000            101   ;------------------------------------------------------------
+0000            102   ;Allocation info for local variables in function 'wait_1ms'
+0000            103   ;------------------------------------------------------------
+0000            104   ;------------------------------------------------------------
+0000            105   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:10: void wait_1ms(void)
+0000            106   ;        -----------------------------------------
+0000            107   ;         function wait_1ms
+0000            108   ;        -----------------------------------------
+0000            109   _wait_1ms:
+0000            110            using   0
+0000            111   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:13: SYST_RVR = (F_CPU/1000L) - 1;  // set reload register, counter rolls over from zero, hence -1
+0000 90E014     112            mov     dptr,#0xE014
+0003 75F000     113            mov     b,#0x00
+0006 742F       114            mov     a,#0x2F
+0008 120000     115            lcall   __gptrput
+000B A3         116            inc     dptr
+000C 7475       117            mov     a,#0x75
+000E 120000     118            lcall   __gptrput
+0011            119   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:14: SYST_CVR = 0; // load the SysTick counter
+0011 90E018     120            mov     dptr,#0xE018
+0014 E4         121            clr     a
+0015 F5F0       122            mov     b,a
+0017 120000     123            lcall   __gptrput
+001A A3         124            inc     dptr
+001B E4         125            clr     a
+001C 120000     126            lcall   __gptrput
+001F            127   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:15: SYST_CSR = 0x05; // Bit 0: ENABLE, BIT 1: TICKINT, BIT 2:CLKSOURCE
+001F 90E010     128            mov     dptr,#0xE010
+0022 75F000     129            mov     b,#0x00
+0025 7405       130            mov     a,#0x05
+0027 120000     131            lcall   __gptrput
+002A A3         132            inc     dptr
+002B E4         133            clr     a
+002C 120000     134            lcall   __gptrput
+002F            135   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:16: while((SYST_CSR & BIT16)==0); // Bit 16 is the COUNTFLAG.  True when counter rolls over from zero.
+002F            136   L002001?:
+002F 90E010     137            mov     dptr,#0xE010
+0032 75F000     138            mov     b,#0x00
+0035 120000     139            lcall   __gptrget
+0038 A3         140            inc     dptr
+0039 120000     141            lcall   __gptrget
+003C E4         142            clr     a
+003D FA         143            mov     r2,a
+003E FB         144            mov     r3,a
+003F 4A         145            orl     a,r2
+0040 6000       146            jz      L002001?
+0042            147   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:17: SYST_CSR = 0x00; // Disable Systick counter
+0042 90E010     148            mov     dptr,#0xE010
+0045 E4         149            clr     a
+0046 F5F0       150            mov     b,a
+0048 120000     151            lcall   __gptrput
+004B A3         152            inc     dptr
+004C E4         153            clr     a
+004D 020000     154            ljmp    __gptrput
+0050            155   ;------------------------------------------------------------
+0050            156   ;Allocation info for local variables in function 'GetPeriod'
+0050            157   ;------------------------------------------------------------
+0050            158   ;n                         Allocated to registers r2 r3 
+0050            159   ;i                         Allocated to registers r4 r5 
+0050            160   ;saved_TCNT1a              Allocated with name '_GetPeriod_saved_TCNT1a_1_21'
+0050            161   ;saved_TCNT1b              Allocated with name '_GetPeriod_saved_TCNT1b_1_21'
+0050            162   ;------------------------------------------------------------
+0050            163   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:52: long int GetPeriod (int n)
+0050            164   ;        -----------------------------------------
+0050            165   ;         function GetPeriod
+0050            166   ;        -----------------------------------------
+0050            167   _GetPeriod:
+0050 AA82       168            mov     r2,dpl
+0052 AB83       169            mov     r3,dph
+0054            170   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:57: SYST_RVR = 0xffffff;  // 24-bit counter set to check for signal present
+0054 90E014     171            mov     dptr,#0xE014
+0057 75F000     172            mov     b,#0x00
+005A 74FF       173            mov     a,#0xFF
+005C 120000     174            lcall   __gptrput
+005F A3         175            inc     dptr
+0060 74FF       176            mov     a,#0xFF
+0062 120000     177            lcall   __gptrput
+0065            178   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:58: SYST_CVR = 0xffffff; // load the SysTick counter
+0065 90E018     179            mov     dptr,#0xE018
+0068 75F000     180            mov     b,#0x00
+006B 74FF       181            mov     a,#0xFF
+006D 120000     182            lcall   __gptrput
+0070 A3         183            inc     dptr
+0071 74FF       184            mov     a,#0xFF
+0073 120000     185            lcall   __gptrput
+0076            186   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:59: SYST_CSR = 0x05; // Bit 0: ENABLE, BIT 1: TICKINT, BIT 2:CLKSOURCE
+0076 90E010     187            mov     dptr,#0xE010
+0079 75F000     188            mov     b,#0x00
+007C 7405       189            mov     a,#0x05
+007E 120000     190            lcall   __gptrput
+0081 A3         191            inc     dptr
+0082 E4         192            clr     a
+0083 120000     193            lcall   __gptrput
+0086            194   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:60: while (PIN_PERIOD!=0) // Wait for square wave to be 0
+0086            195   L003003?:
+0086 900001     196            mov     dptr,#0x0001
+0089 75F000     197            mov     b,#0x00
+008C 120000     198            lcall   __gptrget
+008F 6000       199            jz      L003005?
+0091            200   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:62: if(SYST_CSR & BIT16) return 0;
+0091 90E010     201            mov     dptr,#0xE010
+0094 75F000     202            mov     b,#0x00
+0097 120000     203            lcall   __gptrget
+009A A3         204            inc     dptr
+009B 120000     205            lcall   __gptrget
+009E E4         206            clr     a
+009F FC         207            mov     r4,a
+00A0 FD         208            mov     r5,a
+00A1 4C         209            orl     a,r4
+00A2 6000       210            jz      L003003?
+00A4 900000     211            mov     dptr,#(0x00&0x00ff)
+00A7 E4         212            clr     a
+00A8 F5F0       213            mov     b,a
+00AA 22         214            ret
+00AB            215   L003005?:
+00AB            216   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:64: SYST_CSR = 0x00; // Disable Systick counter
+00AB 90E010     217            mov     dptr,#0xE010
+00AE E4         218            clr     a
+00AF F5F0       219            mov     b,a
+00B1 120000     220            lcall   __gptrput
+00B4 A3         221            inc     dptr
+00B5 E4         222            clr     a
+00B6 120000     223            lcall   __gptrput
+00B9            224   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:66: SYST_RVR = 0xffffff;  // 24-bit counter set to check for signal present
+00B9 90E014     225            mov     dptr,#0xE014
+00BC 75F000     226            mov     b,#0x00
+00BF 74FF       227            mov     a,#0xFF
+00C1 120000     228            lcall   __gptrput
+00C4 A3         229            inc     dptr
+00C5 74FF       230            mov     a,#0xFF
+00C7 120000     231            lcall   __gptrput
+00CA            232   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:67: SYST_CVR = 0xffffff; // load the SysTick counter
+00CA 90E018     233            mov     dptr,#0xE018
+00CD 75F000     234            mov     b,#0x00
+00D0 74FF       235            mov     a,#0xFF
+00D2 120000     236            lcall   __gptrput
+00D5 A3         237            inc     dptr
+00D6 74FF       238            mov     a,#0xFF
+00D8 120000     239            lcall   __gptrput
+00DB            240   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:68: SYST_CSR = 0x05; // Bit 0: ENABLE, BIT 1: TICKINT, BIT 2:CLKSOURCE
+00DB 90E010     241            mov     dptr,#0xE010
+00DE 75F000     242            mov     b,#0x00
+00E1 7405       243            mov     a,#0x05
+00E3 120000     244            lcall   __gptrput
+00E6 A3         245            inc     dptr
+00E7 E4         246            clr     a
+00E8 120000     247            lcall   __gptrput
+00EB            248   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:69: while (PIN_PERIOD==0) // Wait for square wave to be 1
+00EB            249   L003008?:
+00EB 900001     250            mov     dptr,#0x0001
+00EE 75F000     251            mov     b,#0x00
+00F1 120000     252            lcall   __gptrget
+00F4            253   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:71: if(SYST_CSR & BIT16) return 0;
+00F4 7000       254            jnz     L003010?
+00F6 90E010     255            mov     dptr,#0xE010
+00F9 F5F0       256            mov     b,a
+00FB 120000     257            lcall   __gptrget
+00FE A3         258            inc     dptr
+00FF 120000     259            lcall   __gptrget
+0102 E4         260            clr     a
+0103 FC         261            mov     r4,a
+0104 FD         262            mov     r5,a
+0105 4C         263            orl     a,r4
+0106 6000       264            jz      L003008?
+0108 900000     265            mov     dptr,#(0x00&0x00ff)
+010B E4         266            clr     a
+010C F5F0       267            mov     b,a
+010E 22         268            ret
+010F            269   L003010?:
+010F            270   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:73: SYST_CSR = 0x00; // Disable Systick counter
+010F 90E010     271            mov     dptr,#0xE010
+0112 E4         272            clr     a
+0113 F5F0       273            mov     b,a
+0115 120000     274            lcall   __gptrput
+0118 A3         275            inc     dptr
+0119 E4         276            clr     a
+011A 120000     277            lcall   __gptrput
+011D            278   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:75: SYST_RVR = 0xffffff;  // 24-bit counter reset
+011D 90E014     279            mov     dptr,#0xE014
+0120 75F000     280            mov     b,#0x00
+0123 74FF       281            mov     a,#0xFF
+0125 120000     282            lcall   __gptrput
+0128 A3         283            inc     dptr
+0129 74FF       284            mov     a,#0xFF
+012B 120000     285            lcall   __gptrput
+012E            286   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:76: SYST_CVR = 0xffffff; // load the SysTick counter to initial value
+012E 90E018     287            mov     dptr,#0xE018
+0131 75F000     288            mov     b,#0x00
+0134 74FF       289            mov     a,#0xFF
+0136 120000     290            lcall   __gptrput
+0139 A3         291            inc     dptr
+013A 74FF       292            mov     a,#0xFF
+013C 120000     293            lcall   __gptrput
+013F            294   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:77: SYST_CSR = 0x05; // Bit 0: ENABLE, BIT 1: TICKINT, BIT 2:CLKSOURCE
+013F 90E010     295            mov     dptr,#0xE010
+0142 75F000     296            mov     b,#0x00
+0145 7405       297            mov     a,#0x05
+0147 120000     298            lcall   __gptrput
+014A A3         299            inc     dptr
+014B E4         300            clr     a
+014C 120000     301            lcall   __gptrput
+014F            302   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:78: for(i=0; i<n; i++) // Measure the time of 'n' periods
+014F 7C00       303            mov     r4,#0x00
+0151 7D00       304            mov     r5,#0x00
+0153            305   L003021?:
+0153 C3         306            clr     c
+0154 EC         307            mov     a,r4
+0155 9A         308            subb    a,r2
+0156 ED         309            mov     a,r5
+0157 6480       310            xrl     a,#0x80
+0159 8BF0       311            mov     b,r3
+015B 63F080     312            xrl     b,#0x80
+015E 95F0       313            subb    a,b
+0160 5000       314            jnc     L003024?
+0162            315   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:80: while (PIN_PERIOD!=0) // Wait for square wave to be 0
+0162            316   L003013?:
+0162 900001     317            mov     dptr,#0x0001
+0165 75F000     318            mov     b,#0x00
+0168 120000     319            lcall   __gptrget
+016B 6000       320            jz      L003018?
+016D            321   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:82: if(SYST_CSR & BIT16) return 0;
+016D 90E010     322            mov     dptr,#0xE010
+0170 75F000     323            mov     b,#0x00
+0173 120000     324            lcall   __gptrget
+0176 A3         325            inc     dptr
+0177 120000     326            lcall   __gptrget
+017A E4         327            clr     a
+017B FE         328            mov     r6,a
+017C FF         329            mov     r7,a
+017D 4E         330            orl     a,r6
+017E 6000       331            jz      L003013?
+0180 900000     332            mov     dptr,#(0x00&0x00ff)
+0183 E4         333            clr     a
+0184 F5F0       334            mov     b,a
+0186            335   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:84: while (PIN_PERIOD==0) // Wait for square wave to be 1
+0186 22         336            ret
+0187            337   L003018?:
+0187 900001     338            mov     dptr,#0x0001
+018A 75F000     339            mov     b,#0x00
+018D 120000     340            lcall   __gptrget
+0190            341   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:86: if(SYST_CSR & BIT16) return 0;
+0190 7000       342            jnz     L003023?
+0192 90E010     343            mov     dptr,#0xE010
+0195 F5F0       344            mov     b,a
+0197 120000     345            lcall   __gptrget
+019A A3         346            inc     dptr
+019B 120000     347            lcall   __gptrget
+019E E4         348            clr     a
+019F FE         349            mov     r6,a
+01A0 FF         350            mov     r7,a
+01A1 4E         351            orl     a,r6
+01A2 6000       352            jz      L003018?
+01A4 900000     353            mov     dptr,#(0x00&0x00ff)
+01A7 E4         354            clr     a
+01A8 F5F0       355            mov     b,a
+01AA 22         356            ret
+01AB            357   L003023?:
+01AB            358   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:78: for(i=0; i<n; i++) // Measure the time of 'n' periods
+01AB 0C         359            inc     r4
+01AC BC0090     360            cjne    r4,#0x00,L003021?
+01AF 0D         361            inc     r5
+01B0 8000       362            sjmp    L003021?
+01B2            363   L003024?:
+01B2            364   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:89: SYST_CSR = 0x00; // Disable Systick counter
+01B2 90E010     365            mov     dptr,#0xE010
+01B5 E4         366            clr     a
+01B6 F5F0       367            mov     b,a
+01B8 120000     368            lcall   __gptrput
+01BB A3         369            inc     dptr
+01BC E4         370            clr     a
+01BD 120000     371            lcall   __gptrput
+01C0            372   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:91: return 0x1000000-SYST_CVR;
+01C0 90E018     373            mov     dptr,#0xE018
+01C3 75F000     374            mov     b,#0x00
+01C6 120000     375            lcall   __gptrget
+01C9 FA         376            mov     r2,a
+01CA A3         377            inc     dptr
+01CB 120000     378            lcall   __gptrget
+01CE FB         379            mov     r3,a
+01CF E4         380            clr     a
+01D0 FC         381            mov     r4,a
+01D1 FD         382            mov     r5,a
+01D2 C3         383            clr     c
+01D3 9A         384            subb    a,r2
+01D4 FA         385            mov     r2,a
+01D5 E4         386            clr     a
+01D6 9B         387            subb    a,r3
+01D7 FB         388            mov     r3,a
+01D8 E4         389            clr     a
+01D9 9C         390            subb    a,r4
+01DA FC         391            mov     r4,a
+01DB 7401       392            mov     a,#0x01
+01DD 9D         393            subb    a,r5
+01DE 8A82       394            mov     dpl,r2
+01E0 8B83       395            mov     dph,r3
+01E2 8CF0       396            mov     b,r4
+01E4 22         397            ret
+01E5            398   ;------------------------------------------------------------
+01E5            399   ;Allocation info for local variables in function 'ConfigPins'
+01E5            400   ;------------------------------------------------------------
+01E5            401   ;------------------------------------------------------------
+01E5            402   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:95: void ConfigPins(void)
+01E5            403   ;        -----------------------------------------
+01E5            404   ;         function ConfigPins
+01E5            405   ;        -----------------------------------------
+01E5            406   _ConfigPins:
+01E5            407   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:98: SWM_PINENABLE0 |= BIT4; // Disable SWCLK
+01E5 90C1C0     408            mov     dptr,#0xC1C0
+01E8 75F000     409            mov     b,#0x00
+01EB 120000     410            lcall   __gptrget
+01EE FA         411            mov     r2,a
+01EF A3         412            inc     dptr
+01F0 120000     413            lcall   __gptrget
+01F3 FB         414            mov     r3,a
+01F4 430210     415            orl     ar2,#0x10
+01F7 90C1C0     416            mov     dptr,#0xC1C0
+01FA 75F000     417            mov     b,#0x00
+01FD EA         418            mov     a,r2
+01FE 120000     419            lcall   __gptrput
+0201 A3         420            inc     dptr
+0202 EB         421            mov     a,r3
+0203 120000     422            lcall   __gptrput
+0206            423   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:99: SWM_PINENABLE0 |= BIT5; // Disable SWDIO
+0206 90C1C0     424            mov     dptr,#0xC1C0
+0209 75F000     425            mov     b,#0x00
+020C 120000     426            lcall   __gptrget
+020F FA         427            mov     r2,a
+0210 A3         428            inc     dptr
+0211 120000     429            lcall   __gptrget
+0214 FB         430            mov     r3,a
+0215 430220     431            orl     ar2,#0x20
+0218 90C1C0     432            mov     dptr,#0xC1C0
+021B 75F000     433            mov     b,#0x00
+021E EA         434            mov     a,r2
+021F 120000     435            lcall   __gptrput
+0222 A3         436            inc     dptr
+0223 EB         437            mov     a,r3
+0224 120000     438            lcall   __gptrput
+0227            439   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:102: GPIO_DIR0 |= BIT17; // Used for LCD_RS  Pin 2 of TSSOP20 package.
+0227 902000     440            mov     dptr,#0x2000
+022A 75F000     441            mov     b,#0x00
+022D 120000     442            lcall   __gptrget
+0230 FA         443            mov     r2,a
+0231 A3         444            inc     dptr
+0232 120000     445            lcall   __gptrget
+0235 FB         446            mov     r3,a
+0236 902000     447            mov     dptr,#0x2000
+0239 75F000     448            mov     b,#0x00
+023C EA         449            mov     a,r2
+023D 120000     450            lcall   __gptrput
+0240 A3         451            inc     dptr
+0241 EB         452            mov     a,r3
+0242 120000     453            lcall   __gptrput
+0245            454   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:103: GPIO_DIR0 |= BIT13; // Used for LCD_E.  Pin 3 of TSSOP20 package.
+0245 902000     455            mov     dptr,#0x2000
+0248 75F000     456            mov     b,#0x00
+024B 120000     457            lcall   __gptrget
+024E FA         458            mov     r2,a
+024F A3         459            inc     dptr
+0250 120000     460            lcall   __gptrget
+0253 FB         461            mov     r3,a
+0254 430320     462            orl     ar3,#0x20
+0257 902000     463            mov     dptr,#0x2000
+025A 75F000     464            mov     b,#0x00
+025D EA         465            mov     a,r2
+025E 120000     466            lcall   __gptrput
+0261 A3         467            inc     dptr
+0262 EB         468            mov     a,r3
+0263 120000     469            lcall   __gptrput
+0266            470   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:104: GPIO_DIR0 |= BIT3;  // Used for LCD_D4. Pin 7 of TSSOP20 package.
+0266 902000     471            mov     dptr,#0x2000
+0269 75F000     472            mov     b,#0x00
+026C 120000     473            lcall   __gptrget
+026F FA         474            mov     r2,a
+0270 A3         475            inc     dptr
+0271 120000     476            lcall   __gptrget
+0274 FB         477            mov     r3,a
+0275 430208     478            orl     ar2,#0x08
+0278 902000     479            mov     dptr,#0x2000
+027B 75F000     480            mov     b,#0x00
+027E EA         481            mov     a,r2
+027F 120000     482            lcall   __gptrput
+0282 A3         483            inc     dptr
+0283 EB         484            mov     a,r3
+0284 120000     485            lcall   __gptrput
+0287            486   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:105: GPIO_DIR0 |= BIT2;  // Used for LCD_D5. Pin 8 of TSSOP20 package.
+0287 902000     487            mov     dptr,#0x2000
+028A 75F000     488            mov     b,#0x00
+028D 120000     489            lcall   __gptrget
+0290 FA         490            mov     r2,a
+0291 A3         491            inc     dptr
+0292 120000     492            lcall   __gptrget
+0295 FB         493            mov     r3,a
+0296 430204     494            orl     ar2,#0x04
+0299 902000     495            mov     dptr,#0x2000
+029C 75F000     496            mov     b,#0x00
+029F EA         497            mov     a,r2
+02A0 120000     498            lcall   __gptrput
+02A3 A3         499            inc     dptr
+02A4 EB         500            mov     a,r3
+02A5 120000     501            lcall   __gptrput
+02A8            502   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:106: GPIO_DIR0 |= BIT11; // Used for LCD_D6. Pin 9 of TSSOP20 package. WARNING: NEEDS PULL-UP Resistor to VDD.
+02A8 902000     503            mov     dptr,#0x2000
+02AB 75F000     504            mov     b,#0x00
+02AE 120000     505            lcall   __gptrget
+02B1 FA         506            mov     r2,a
+02B2 A3         507            inc     dptr
+02B3 120000     508            lcall   __gptrget
+02B6 FB         509            mov     r3,a
+02B7 430308     510            orl     ar3,#0x08
+02BA 902000     511            mov     dptr,#0x2000
+02BD 75F000     512            mov     b,#0x00
+02C0 EA         513            mov     a,r2
+02C1 120000     514            lcall   __gptrput
+02C4 A3         515            inc     dptr
+02C5 EB         516            mov     a,r3
+02C6 120000     517            lcall   __gptrput
+02C9            518   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:107: GPIO_DIR0 |= BIT10; // Used for LCD_D7. Pin 10 of TSSOP20 package. WARNING: NEEDS PULL-UP Resistor to VDD.
+02C9 902000     519            mov     dptr,#0x2000
+02CC 75F000     520            mov     b,#0x00
+02CF 120000     521            lcall   __gptrget
+02D2 FA         522            mov     r2,a
+02D3 A3         523            inc     dptr
+02D4 120000     524            lcall   __gptrget
+02D7 FB         525            mov     r3,a
+02D8 430304     526            orl     ar3,#0x04
+02DB 902000     527            mov     dptr,#0x2000
+02DE 75F000     528            mov     b,#0x00
+02E1 EA         529            mov     a,r2
+02E2 120000     530            lcall   __gptrput
+02E5 A3         531            inc     dptr
+02E6 EB         532            mov     a,r3
+02E7 120000     533            lcall   __gptrput
+02EA            534   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:109: GPIO_DIR0 &= ~(BIT1); // Configure PIO0_1 as input.
+02EA 902000     535            mov     dptr,#0x2000
+02ED 75F000     536            mov     b,#0x00
+02F0 120000     537            lcall   __gptrget
+02F3 FA         538            mov     r2,a
+02F4 A3         539            inc     dptr
+02F5 120000     540            lcall   __gptrget
+02F8 FB         541            mov     r3,a
+02F9 5302FD     542            anl     ar2,#0xFD
+02FC 902000     543            mov     dptr,#0x2000
+02FF 75F000     544            mov     b,#0x00
+0302 EA         545            mov     a,r2
+0303 120000     546            lcall   __gptrput
+0306 A3         547            inc     dptr
+0307 EB         548            mov     a,r3
+0308 020000     549            ljmp    __gptrput
+030B            550   ;------------------------------------------------------------
+030B            551   ;Allocation info for local variables in function 'main'
+030B            552   ;------------------------------------------------------------
+030B            553   ;buff                      Allocated with name '_main_buff_1_30'
+030B            554   ;reload                    Allocated with name '_main_reload_1_30'
+030B            555   ;count                     Allocated to registers r2 r3 r4 r5 
+030B            556   ;T                         Allocated to registers r6 r7 r0 r1 
+030B            557   ;f                         Allocated to registers r6 r7 r0 r1 
+030B            558   ;------------------------------------------------------------
+030B            559   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:113: void main(void)
+030B            560   ;        -----------------------------------------
+030B            561   ;         function main
+030B            562   ;        -----------------------------------------
+030B            563   _main:
+030B            564   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:122: initUART(115200);
+030B 90C200     565            mov     dptr,#0xC200
+030E 120000     566            lcall   _initUART
+0311            567   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:124: ConfigPins();   
+0311 120000     568            lcall   _ConfigPins
+0314            569   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:125: LCD_4BIT();
+0314 120000     570            lcall   _LCD_4BIT
+0317            571   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:128: eputs("\n"); // First dummy transmission to initialize all the transmitter functions
+0317 901750     572            mov     dptr,#__str_0
+031A 75F080     573            mov     b,#0x80
+031D 120000     574            lcall   _eputs
+0320            575   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:129: waitms(1000); // Wait for putty to start
+0320 9003E8     576            mov     dptr,#0x03E8
+0323 120000     577            lcall   _waitms
+0326            578   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:130: eputs("4-bit mode LCD test using the LPC824.\r\n");
+0326 901810     579            mov     dptr,#__str_1
+0329 75F080     580            mov     b,#0x80
+032C 120000     581            lcall   _eputs
+032F            582   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:133: LCDprint("LCD 4-bit test:", 1, 1);
+032F 750001     583            mov     _LCDprint_PARM_2,#0x01
+0332 750001     584            mov     _LCDprint_PARM_3,#0x01
+0335 9018F0     585            mov     dptr,#__str_2
+0338 75F080     586            mov     b,#0x80
+033B 120000     587            lcall   _LCDprint
+033E            588   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:134: LCDprint("Hello, World!", 2, 1);
+033E 750002     589            mov     _LCDprint_PARM_2,#0x02
+0341 750001     590            mov     _LCDprint_PARM_3,#0x01
+0344 901970     591            mov     dptr,#__str_3
+0347 75F080     592            mov     b,#0x80
+034A 120000     593            lcall   _LCDprint
+034D            594   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:138: LCD_4BIT();
+034D 120000     595            lcall   _LCD_4BIT
+0350            596   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:140: while(1)
+0350            597   L005005?:
+0350            598   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:142: count=GetPeriod(100);
+0350 900064     599            mov     dptr,#0x0064
+0353 120000     600            lcall   _GetPeriod
+0356 AA82       601            mov     r2,dpl
+0358 AB83       602            mov     r3,dph
+035A ACF0       603            mov     r4,b
+035C FD         604            mov     r5,a
+035D            605   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:143: if(count>0)
+035D C3         606            clr     c
+035E E4         607            clr     a
+035F 9A         608            subb    a,r2
+0360 E4         609            clr     a
+0361 9B         610            subb    a,r3
+0362 E4         611            clr     a
+0363 9C         612            subb    a,r4
+0364 E4         613            clr     a
+0365 6480       614            xrl     a,#0x80
+0367 8DF0       615            mov     b,r5
+0369 63F080     616            xrl     b,#0x80
+036C 95F0       617            subb    a,b
+036E 4000       618            jc      L005011?
+0370 020000     619            ljmp    L005002?
+0373            620   L005011?:
+0373            621   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:145: T=count/(F_CPU*100.0);
+0373 8A82       622            mov     dpl,r2
+0375 8B83       623            mov     dph,r3
+0377 8CF0       624            mov     b,r4
+0379 ED         625            mov     a,r5
+037A C002       626            push    ar2
+037C C003       627            push    ar3
+037E C004       628            push    ar4
+0380 C005       629            push    ar5
+0382 120000     630            lcall   ___slong2fs
+0385 AE82       631            mov     r6,dpl
+0387 AF83       632            mov     r7,dph
+0389 A8F0       633            mov     r0,b
+038B F9         634            mov     r1,a
+038C 745E       635            mov     a,#0x5E
+038E C0E0       636            push    acc
+0390 74D0       637            mov     a,#0xD0
+0392 C0E0       638            push    acc
+0394 7432       639            mov     a,#0x32
+0396 C0E0       640            push    acc
+0398 744F       641            mov     a,#0x4F
+039A C0E0       642            push    acc
+039C 8E82       643            mov     dpl,r6
+039E 8F83       644            mov     dph,r7
+03A0 88F0       645            mov     b,r0
+03A2 E9         646            mov     a,r1
+03A3 120000     647            lcall   ___fsdiv
+03A6 AE82       648            mov     r6,dpl
+03A8 AF83       649            mov     r7,dph
+03AA A8F0       650            mov     r0,b
+03AC F9         651            mov     r1,a
+03AD E581       652            mov     a,sp
+03AF 24FC       653            add     a,#0xfc
+03B1 F581       654            mov     sp,a
+03B3            655   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:146: f=1/T;
+03B3 C006       656            push    ar6
+03B5 C007       657            push    ar7
+03B7 C000       658            push    ar0
+03B9 C001       659            push    ar1
+03BB 900000     660            mov     dptr,#0x0000
+03BE 75F080     661            mov     b,#0x80
+03C1 743F       662            mov     a,#0x3F
+03C3 120000     663            lcall   ___fsdiv
+03C6 AE82       664            mov     r6,dpl
+03C8 AF83       665            mov     r7,dph
+03CA A8F0       666            mov     r0,b
+03CC F9         667            mov     r1,a
+03CD E581       668            mov     a,sp
+03CF 24FC       669            add     a,#0xfc
+03D1 F581       670            mov     sp,a
+03D3            671   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:147: eputs("f=");
+03D3 904D88     672            mov     dptr,#__str_4
+03D6 75F080     673            mov     b,#0x80
+03D9 C006       674            push    ar6
+03DB C007       675            push    ar7
+03DD C000       676            push    ar0
+03DF C001       677            push    ar1
+03E1 120000     678            lcall   _eputs
+03E4 D001       679            pop     ar1
+03E6 D000       680            pop     ar0
+03E8 D007       681            pop     ar7
+03EA D006       682            pop     ar6
+03EC            683   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:148: PrintNumber(f, 10, 7);
+03EC 8E82       684            mov     dpl,r6
+03EE 8F83       685            mov     dph,r7
+03F0 88F0       686            mov     b,r0
+03F2 E9         687            mov     a,r1
+03F3 120000     688            lcall   ___fs2sint
+03F6 75000A     689            mov     _PrintNumber_PARM_2,#0x0A
+03F9 E4         690            clr     a
+03FA F501       691            mov     (_PrintNumber_PARM_2 + 1),a
+03FC 750007     692            mov     _PrintNumber_PARM_3,#0x07
+03FF E4         693            clr     a
+0400 F501       694            mov     (_PrintNumber_PARM_3 + 1),a
+0402 120000     695            lcall   _PrintNumber
+0405            696   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:150: eputs("Hz, count=");
+0405 904EE8     697            mov     dptr,#__str_5
+0408 75F080     698            mov     b,#0x80
+040B 120000     699            lcall   _eputs
+040E D005       700            pop     ar5
+0410 D004       701            pop     ar4
+0412 D003       702            pop     ar3
+0414 D002       703            pop     ar2
+0416            704   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:151: PrintNumber(count, 10, 6);
+0416 8A82       705            mov     dpl,r2
+0418 8B83       706            mov     dph,r3
+041A 75000A     707            mov     _PrintNumber_PARM_2,#0x0A
+041D E4         708            clr     a
+041E F501       709            mov     (_PrintNumber_PARM_2 + 1),a
+0420 750006     710            mov     _PrintNumber_PARM_3,#0x06
+0423 E4         711            clr     a
+0424 F501       712            mov     (_PrintNumber_PARM_3 + 1),a
+0426 120000     713            lcall   _PrintNumber
+0429            714   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:153: eputs("\r");
+0429 904F28     715            mov     dptr,#__str_6
+042C 75F080     716            mov     b,#0x80
+042F 120000     717            lcall   _eputs
+0432 8000       718            sjmp    L005003?
+0434            719   L005002?:
+0434            720   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:157: eputs("NO SIGNAL                     \r");
+0434 904FA8     721            mov     dptr,#__str_7
+0437 75F080     722            mov     b,#0x80
+043A 120000     723            lcall   _eputs
+043D            724   L005003?:
+043D            725   ;        C:\Users\keybo\Documents\GitHub\292lab6\main_folder\main_runfile.c:159: waitms(200);
+043D 9000C8     726            mov     dptr,#0x00C8
+0440 120000     727            lcall   _waitms
+0443 020000     728            ljmp    L005005?
+0446            729            rseg R_CSEG
+0446            730   
+0000            731            rseg R_XINIT
+0000            732   
+0000            733            rseg R_CONST
+0000            734   __str_0:
+0000 0A         735            db 0x0A
+0001 00         736            db 0x00
+0002            737   __str_1:
+0002 342D6269   738            db '4-bit mode LCD test using the LPC824.'
+     74206D6F
+     6465204C
+     43442074
+     65737420
+     7573696E
+     67207468
+     65204C50
+     43383234
+     2E
+0027 0D         739            db 0x0D
+0028 0A         740            db 0x0A
+0029 00         741            db 0x00
+002A            742   __str_2:
+002A 4C434420   743            db 'LCD 4-bit test:'
+     342D6269
+     74207465
+     73743A
+0039 00         744            db 0x00
+003A            745   __str_3:
+003A 48656C6C   746            db 'Hello, World!'
+     6F2C2057
+     6F726C64
+     21
+0047 00         747            db 0x00
+0048            748   __str_4:
+0048 663D       749            db 'f='
+004A 00         750            db 0x00
+004B            751   __str_5:
+004B 487A2C20   752            db 'Hz, count='
+     636F756E
+     743D
+0055 00         753            db 0x00
+0056            754   __str_6:
+0056 0D         755            db 0x0D
+0057 00         756            db 0x00
+0058            757   __str_7:
+0058 4E4F2053   758            db 'NO SIGNAL                     '
+     49474E41
+     4C202020
+     20202020
+     20202020
+     20202020
+     20202020
+     2020
+0076 0D         759            db 0x0D
+0077 00         760            db 0x00
+0078            761   
+0003            762            CSEG
+0003            763   
+0003            764   end

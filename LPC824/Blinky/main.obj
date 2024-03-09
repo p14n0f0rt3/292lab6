@@ -1,0 +1,155 @@
+<MODULE>
+main
+</MODULE>
+
+<OPTC51>
+--model-small
+</OPTC51>
+
+<SEGMENTS>
+R_GSINIT,code,0000,NO
+R_BSEG,bit,0000,NO
+R_XSEG,xdata,0000,NO
+BIT_BANK,data,0000,OV
+R_CONST,code,0000,NO
+rbank0,data,0000,OV
+R_PSEG,xdata,0000,NO
+R_DINIT,code,0000,NO
+R_DSEG,data,0000,NO
+R_OSEG,data,0000,OV
+R_IXSEG,xdata,0000,NO
+R_ISEG,idata,0000,NO
+R_HOME,code,0000,NO
+R_XINIT,code,0000,NO
+R_CSEG,code,0096,NO
+</SEGMENTS>
+
+<LOCALS>
+L003008?,R_CSEG,002E,0000
+L003001?,R_CSEG,0025,0000
+L004002?,R_CSEG,0074,0000
+</LOCALS>
+
+<PUBLICS>
+_main,R_CSEG,0033,0000
+_ConfigPins,R_CSEG,0000,0000
+_delay,R_CSEG,0021,0000
+</PUBLICS>
+
+<EXTERNALS>
+__gptrget,any,0000,0000
+__gptrput,any,0000,0000
+_crt0,any,0000,0000
+</EXTERNALS>
+
+<CODE AT 0000>
+</CODE>
+
+<CODE R_HOME>
+</CODE>
+
+<CODE R_GSINIT>
+</CODE>
+
+<CODE R_CSEG>
+</CODE>
+
+<CODE AT 0000>
+02 addr16(_crt0;)  
+</CODE>
+
+<CODE R_HOME>
+</CODE>
+
+<CODE R_GSINIT>
+</CODE>
+
+<CODE R_GSINIT>
+</CODE>
+
+<CODE R_DINIT>
+</CODE>
+
+<CODE R_CSEG>
+90 20 00
+75 F0 00
+12 addr16(__gptrget;)  
+FA
+A3
+12 addr16(__gptrget;)  
+FB
+43 03 40
+90 20 00
+75 F0 00
+EA
+12 addr16(__gptrput;)  
+A3
+EB
+02 addr16(__gptrput;)  
+AA 82
+AB 83
+8A 04
+8B 05
+1A
+BA FF rel3(L003008?;)
+1B
+EC
+4D
+70 rel2(L003001?;)
+22
+12 addr16(_ConfigPins;)  
+90 80 E0
+75 F0 04
+74 03
+12 addr16(__gptrput;)  
+A3
+E4
+12 addr16(__gptrput;)  
+90 80 E8
+75 F0 04
+74 64
+12 addr16(__gptrput;)  
+A3
+E4
+12 addr16(__gptrput;)  
+90 80 E4
+75 F0 04
+74 01
+12 addr16(__gptrput;)  
+A3
+E4
+12 addr16(__gptrput;)  
+90 C0 2C
+E4
+F5 F0
+12 addr16(__gptrput;)  
+A3
+E4
+12 addr16(__gptrput;)  
+90 00 0E
+E4
+F5 F0
+74 01
+12 addr16(__gptrput;)  
+90 84 80
+12 addr16(_delay;)  
+90 00 0E
+E4
+F5 F0
+12 addr16(__gptrput;)  
+90 84 80
+12 addr16(_delay;)  
+80 rel2(L004002?;)
+</CODE>
+
+<CODE R_CSEG>
+</CODE>
+
+<CODE R_XINIT>
+</CODE>
+
+<CODE R_CONST>
+</CODE>
+
+<CODE AT 0003>
+</CODE>

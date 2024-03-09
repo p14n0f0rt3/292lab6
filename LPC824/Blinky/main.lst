@@ -1,0 +1,219 @@
+0000              1   ;--------------------------------------------------------
+0000              2   ; File Created by C51
+0000              3   ; Version 1.0.0 #1170 (Feb 16 2022) (MSVC)
+0000              4   ; This file was generated Fri Mar 08 17:36:22 2024
+0000              5   ;--------------------------------------------------------
+                  5   $name main
+                  6   $optc51 --model-small
+0000              8            R_DSEG    segment data
+0000              9            R_CSEG    segment code
+0000             10            R_BSEG    segment bit
+0000             11            R_XSEG    segment xdata
+0000             12            R_PSEG    segment xdata
+0000             13            R_ISEG    segment idata
+0000             14            R_OSEG    segment data overlay
+0000             15            BIT_BANK  segment data overlay
+0000             16            R_HOME    segment code
+0000             17            R_GSINIT  segment code
+0000             18            R_IXSEG   segment xdata
+0000             19            R_CONST   segment code
+0000             20            R_XINIT   segment code
+0000             21            R_DINIT   segment code
+0000             22   
+0000             23   ;--------------------------------------------------------
+0000             24   ; Public variables in this module
+0000             25   ;--------------------------------------------------------
+0000             26            public _main
+0000             27            public _delay
+0000             28            public _ConfigPins
+0000             29   ;--------------------------------------------------------
+0000             30   ; Special Function Registers
+0000             31   ;--------------------------------------------------------
+0000             32   ;--------------------------------------------------------
+0000             33   ; special function bits
+0000             34   ;--------------------------------------------------------
+0000             35   ;--------------------------------------------------------
+0000             36   ; overlayable register banks
+0000             37   ;--------------------------------------------------------
+0000             38            rbank0 segment data overlay
+0000             39   ;--------------------------------------------------------
+0000             40   ; internal ram data
+0000             41   ;--------------------------------------------------------
+0000             42            rseg R_DSEG
+0000             43   ;--------------------------------------------------------
+0000             44   ; overlayable items in internal ram 
+0000             45   ;--------------------------------------------------------
+0000             46            rseg    R_OSEG
+0000             47   ;--------------------------------------------------------
+0000             48   ; indirectly addressable internal ram data
+0000             49   ;--------------------------------------------------------
+0000             50            rseg R_ISEG
+0000             51   ;--------------------------------------------------------
+0000             52   ; absolute internal ram data
+0000             53   ;--------------------------------------------------------
+0000             54            DSEG
+0000             55   ;--------------------------------------------------------
+0000             56   ; bit data
+0000             57   ;--------------------------------------------------------
+0000             58            rseg R_BSEG
+0000             59   ;--------------------------------------------------------
+0000             60   ; paged external ram data
+0000             61   ;--------------------------------------------------------
+0000             62            rseg R_PSEG
+0000             63   ;--------------------------------------------------------
+0000             64   ; external ram data
+0000             65   ;--------------------------------------------------------
+0000             66            rseg R_XSEG
+0000             67   ;--------------------------------------------------------
+0000             68   ; absolute external ram data
+0000             69   ;--------------------------------------------------------
+0000             70            XSEG
+0000             71   ;--------------------------------------------------------
+0000             72   ; external initialized ram data
+0000             73   ;--------------------------------------------------------
+0000             74            rseg R_IXSEG
+0000             75            rseg R_HOME
+0000             76            rseg R_GSINIT
+0000             77            rseg R_CSEG
+0000             78   ;--------------------------------------------------------
+0000             79   ; Reset entry point and interrupt vectors
+0000             80   ;--------------------------------------------------------
+0000             81            CSEG at 0x0000
+0000 020000      82            ljmp    _crt0
+0003             83   ;--------------------------------------------------------
+0003             84   ; global & static initialisations
+0003             85   ;--------------------------------------------------------
+0000             86            rseg R_HOME
+0000             87            rseg R_GSINIT
+0000             88            rseg R_GSINIT
+0000             89   ;--------------------------------------------------------
+0000             90   ; data variables initialization
+0000             91   ;--------------------------------------------------------
+0000             92            rseg R_DINIT
+0000             93            ; The linker places a 'ret' at the end of segment R_DINIT.
+0000             94   ;--------------------------------------------------------
+0000             95   ; code
+0000             96   ;--------------------------------------------------------
+0000             97            rseg R_CSEG
+0000             98   ;------------------------------------------------------------
+0000             99   ;Allocation info for local variables in function 'ConfigPins'
+0000            100   ;------------------------------------------------------------
+0000            101   ;------------------------------------------------------------
+0000            102   ;        C:\Users\keybo\Documents\GitHub\292lab6\LPC824\Blinky\main.c:25: void ConfigPins()
+0000            103   ;        -----------------------------------------
+0000            104   ;         function ConfigPins
+0000            105   ;        -----------------------------------------
+0000            106   _ConfigPins:
+0000            107            using   0
+0000            108   ;        C:\Users\keybo\Documents\GitHub\292lab6\LPC824\Blinky\main.c:27: GPIO_DIR0 |= BIT14; 
+0000 902000     109            mov     dptr,#0x2000
+0003 75F000     110            mov     b,#0x00
+0006 120000     111            lcall   __gptrget
+0009 FA         112            mov     r2,a
+000A A3         113            inc     dptr
+000B 120000     114            lcall   __gptrget
+000E FB         115            mov     r3,a
+000F 430340     116            orl     ar3,#0x40
+0012 902000     117            mov     dptr,#0x2000
+0015 75F000     118            mov     b,#0x00
+0018 EA         119            mov     a,r2
+0019 120000     120            lcall   __gptrput
+001C A3         121            inc     dptr
+001D EB         122            mov     a,r3
+001E 020000     123            ljmp    __gptrput
+0021            124   ;------------------------------------------------------------
+0021            125   ;Allocation info for local variables in function 'delay'
+0021            126   ;------------------------------------------------------------
+0021            127   ;len                       Allocated to registers r2 r3 
+0021            128   ;------------------------------------------------------------
+0021            129   ;        C:\Users\keybo\Documents\GitHub\292lab6\LPC824\Blinky\main.c:30: void delay(int len)
+0021            130   ;        -----------------------------------------
+0021            131   ;         function delay
+0021            132   ;        -----------------------------------------
+0021            133   _delay:
+0021 AA82       134            mov     r2,dpl
+0023 AB83       135            mov     r3,dph
+0025            136   ;        C:\Users\keybo\Documents\GitHub\292lab6\LPC824\Blinky\main.c:32: while(len--);
+0025            137   L003001?:
+0025 8A04       138            mov     ar4,r2
+0027 8B05       139            mov     ar5,r3
+0029 1A         140            dec     r2
+002A BAFF10     141            cjne    r2,#0xff,L003008?
+002D 1B         142            dec     r3
+002E            143   L003008?:
+002E EC         144            mov     a,r4
+002F 4D         145            orl     a,r5
+0030 7000       146            jnz     L003001?
+0032 22         147            ret
+0033            148   ;------------------------------------------------------------
+0033            149   ;Allocation info for local variables in function 'main'
+0033            150   ;------------------------------------------------------------
+0033            151   ;------------------------------------------------------------
+0033            152   ;        C:\Users\keybo\Documents\GitHub\292lab6\LPC824\Blinky\main.c:35: void main(void)
+0033            153   ;        -----------------------------------------
+0033            154   ;         function main
+0033            155   ;        -----------------------------------------
+0033            156   _main:
+0033            157   ;        C:\Users\keybo\Documents\GitHub\292lab6\LPC824\Blinky\main.c:37: ConfigPins();
+0033 120000     158            lcall   _ConfigPins
+0036            159   ;        C:\Users\keybo\Documents\GitHub\292lab6\LPC824\Blinky\main.c:40: SYSCON_CLKOUTSEL = 3; // select main clock as clock out source
+0036 9080E0     160            mov     dptr,#0x80E0
+0039 75F004     161            mov     b,#0x04
+003C 7403       162            mov     a,#0x03
+003E 120000     163            lcall   __gptrput
+0041 A3         164            inc     dptr
+0042 E4         165            clr     a
+0043 120000     166            lcall   __gptrput
+0046            167   ;        C:\Users\keybo\Documents\GitHub\292lab6\LPC824\Blinky\main.c:41: SYSCON_CLKOUTDIV = 100; // divide down so easier to measure
+0046 9080E8     168            mov     dptr,#0x80E8
+0049 75F004     169            mov     b,#0x04
+004C 7464       170            mov     a,#0x64
+004E 120000     171            lcall   __gptrput
+0051 A3         172            inc     dptr
+0052 E4         173            clr     a
+0053 120000     174            lcall   __gptrput
+0056            175   ;        C:\Users\keybo\Documents\GitHub\292lab6\LPC824\Blinky\main.c:42: SYSCON_CLKOUTUEN = 1; // update clockout source
+0056 9080E4     176            mov     dptr,#0x80E4
+0059 75F004     177            mov     b,#0x04
+005C 7401       178            mov     a,#0x01
+005E 120000     179            lcall   __gptrput
+0061 A3         180            inc     dptr
+0062 E4         181            clr     a
+0063 120000     182            lcall   __gptrput
+0066            183   ;        C:\Users\keybo\Documents\GitHub\292lab6\LPC824\Blinky\main.c:43: SWM_PINASSIGN11 = (23 << 16); // route clock out on pin 1 (GPIO0_23)
+0066 90C02C     184            mov     dptr,#0xC02C
+0069 E4         185            clr     a
+006A F5F0       186            mov     b,a
+006C 120000     187            lcall   __gptrput
+006F A3         188            inc     dptr
+0070 E4         189            clr     a
+0071 120000     190            lcall   __gptrput
+0074            191   ;        C:\Users\keybo\Documents\GitHub\292lab6\LPC824\Blinky\main.c:44: while(1)       
+0074            192   L004002?:
+0074            193   ;        C:\Users\keybo\Documents\GitHub\292lab6\LPC824\Blinky\main.c:46: GPIO_B14 = 1;
+0074 90000E     194            mov     dptr,#(0x0E&0x00ff)
+0077 E4         195            clr     a
+0078 F5F0       196            mov     b,a
+007A 7401       197            mov     a,#0x01
+007C 120000     198            lcall   __gptrput
+007F            199   ;        C:\Users\keybo\Documents\GitHub\292lab6\LPC824\Blinky\main.c:47: delay(2000000);
+007F 908480     200            mov     dptr,#0x8480
+0082 120000     201            lcall   _delay
+0085            202   ;        C:\Users\keybo\Documents\GitHub\292lab6\LPC824\Blinky\main.c:48: GPIO_B14 = 0; 
+0085 90000E     203            mov     dptr,#0x000E
+0088 E4         204            clr     a
+0089 F5F0       205            mov     b,a
+008B 120000     206            lcall   __gptrput
+008E            207   ;        C:\Users\keybo\Documents\GitHub\292lab6\LPC824\Blinky\main.c:49: delay(2000000);
+008E 908480     208            mov     dptr,#0x8480
+0091 120000     209            lcall   _delay
+0094 8000       210            sjmp    L004002?
+0096            211            rseg R_CSEG
+0096            212   
+0000            213            rseg R_XINIT
+0000            214   
+0000            215            rseg R_CONST
+0000            216   
+0003            217            CSEG
+0003            218   
+0003            219   end
