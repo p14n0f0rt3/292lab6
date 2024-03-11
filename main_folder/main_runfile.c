@@ -17,11 +17,11 @@ void wait_1ms(void)
 	SYST_CSR = 0x00; // Disable Systick counter
 }
 
-/*
-void waitms(int len)
+
+//void waitms(int len)
 {
 	while(len--) wait_1ms();
-}*/
+}//
 
 // LPC824 pinout:
 //                             --------
@@ -143,12 +143,10 @@ void main(void)
 		if(count>0)
 		{
 			T=count/(F_CPU*100.0);
-			f=1/T;
-			eputs("f=");
-			PrintNumber(f, 10, 7);
+			eputs("Period=");
+			PrintNumber(T, 10, 7);
 			//LCD_print("Period (s):", 1, 1); 
-			eputs("Hz, count=");
-			PrintNumber(count, 10, 6);
+			eputs("(s)");
 			//LCD_print("Tester", 2, 1);
 			eputs("\r");
 		}
